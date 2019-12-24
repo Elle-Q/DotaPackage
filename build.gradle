@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.15'
+}
+
+group 'com.elle'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+intellij {
+    type = 'IU'
+    version '2018.3.6'
+    pluginName = 'Ember.js'
+    plugins = ['JavaScriptLanguage', 'CSS']
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle plugin sample: create jar distribution',
+                'Implementation-Version': version,
+                'Created-By': 'elle'
+    }
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+def createDir = {
+    path ->
+        File dir = new File(path)
+        if (!dir.exists()) {
+            dir.mkdir()
+        }
+}
+
+task makeJavaDir(){
+    def paths = ['src/main/java','src/main/resources','src/test/java','src/test/resources']
+    doFirst {
+        paths.forEach(createDir)
+    }
+}
