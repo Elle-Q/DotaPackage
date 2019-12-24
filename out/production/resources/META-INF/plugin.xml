@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>com.elle.DotaPackage</id>
+    <name>DOTA-Pack</name>
+    <vendor email="elqu123654@gmail.com" url="https://github.com/Elle-Q">Elle</vendor>
+
+    <description>dota package</description>
+
+    <depends>com.intellij.modules.xml</depends>
+    <depends>com.intellij.modules.lang</depends>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <completion.contributor language="JavaScript" implementationClass="contributors.JsConstantsContributor"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>

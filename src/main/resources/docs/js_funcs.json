@@ -1,0 +1,5547 @@
+[
+  {
+    "Signature": "GameEvents.Subscribe( cstring pEventName, js_value funcVal )",
+    "Description": "Subscribe to a game event"
+  },
+  {
+    "Signature": "GameEvents.Unsubscribe( integer nCallbackHandle )",
+    "Description": "Unsubscribe from a game event"
+  },
+  {
+    "Signature": "GameEvents.SendCustomGameEventToServer( cstring pEventName, js_object jsObject )",
+    "Description": "Send a custom game event to the server"
+  },
+  {
+    "Signature": "GameEvents.SendCustomGameEventToAllClients( cstring pEventName, js_object jsObject )",
+    "Description": "Send a custom game event to the server, which will send it to all clients"
+  },
+  {
+    "Signature": "GameEvents.SendCustomGameEventToClient( cstring pEventName, integer playerIndex, js_object jsObject )",
+    "Description": "Send a custom game event to the server, which will then send it to one client"
+  },
+  {
+    "Signature": "GameEvents.SendEventClientSide( cstring pEventName, js_object jsObject )",
+    "Description": "Send a client-side event using gameeventmanager (only useful for a few specific events)"
+  },
+  {
+    "Signature": "CustomNetTables.GetTableValue( cstring pTableName, cstring pKeyName )",
+    "Description": "Get a key from a custom net table"
+  },
+  {
+    "Signature": "CustomNetTables.GetAllTableValues( cstring pTableName )",
+    "Description": "Get all values from a custom net table"
+  },
+  {
+    "Signature": "CustomNetTables.SubscribeNetTableListener( js_raw_args args )",
+    "Description": "Register a callback when a particular custom net table changes"
+  },
+  {
+    "Signature": "CustomNetTables.UnsubscribeNetTableListener( integer nCallbackHandle )",
+    "Description": "Unsubscribe from a game event"
+  },
+  {
+    "Signature": "SteamUGC.SubscribeItem( cstring pPublishedFileID, js_value funcVal )",
+    "Description": "Subscribe to a piece of UGC"
+  },
+  {
+    "Signature": "SteamUGC.UnsubscribeItem( cstring pPublishedFileID, js_value funcVal )",
+    "Description": "Unsubscribe from a piece of UGC"
+  },
+  {
+    "Signature": "SteamUGC.GetSubscriptionInfo( cstring pPublishedFileID )",
+    "Description": "Get a key from a custom net table"
+  },
+  {
+    "Signature": "SteamUGC.SetUserItemVote( cstring pPublishedFileID, boolean bVoteUp, js_value funcVal )",
+    "Description": "Vote on a piece of UGC"
+  },
+  {
+    "Signature": "SteamUGC.GetUserItemVote( cstring pPublishedFileID, js_value funcVal )",
+    "Description": "Get the user\u0027s vote on a piece of UGC"
+  },
+  {
+    "Signature": "SteamUGC.AddToFavorites( cstring pPublishedFileID, js_value funcVal )",
+    "Description": "Add an item to the user\u0027s favorites list"
+  },
+  {
+    "Signature": "SteamUGC.RemoveFromFavorites( cstring pPublishedFileID, js_value funcVal )",
+    "Description": "Remove an item from the user\u0027s favorites list"
+  },
+  {
+    "Signature": "SteamUGC.CreateQueryAllUGCRequest( integer eQueryType, integer eMatchingeMatchingUGCTypeFileType, unsigned unPage )",
+    "Description": "Create a request to query Steam for all UGC"
+  },
+  {
+    "Signature": "SteamUGC.CreateQueryUGCDetailsRequest( js_array jsArray )",
+    "Description": "Create a request to query Steam for specific UGC"
+  },
+  {
+    "Signature": "SteamUGC.AddRequiredTagToQuery( integer handle, cstring pchTag )",
+    "Description": "Adds a required tag to the query"
+  },
+  {
+    "Signature": "SteamUGC.AddExcludedTagToQuery( integer handle, cstring pchTag )",
+    "Description": "Adds an excluded tag to the query"
+  },
+  {
+    "Signature": "SteamUGC.ConfigureQuery( integer handle, js_object jsObject )",
+    "Description": "Adds a required tag to the query"
+  },
+  {
+    "Signature": "SteamUGC.SendUGCQuery( integer handle, js_value funcVal )",
+    "Description": "Sends the prepared query"
+  },
+  {
+    "Signature": "SteamUGC.RegisterDownloadItemResultCallback( cstring pPublishedFileID, js_value funcVal )",
+    "Description": "Register a callback to be called when the item is downloaded"
+  },
+  {
+    "Signature": "SteamFriends.RequestPersonaName( cstring pchSteamID, js_value funcVal )",
+    "Description": "Requests the user\u0027s persona name"
+  },
+  {
+    "Signature": "SteamFriends.SetLargeAvatarImage( js_raw_args args )",
+    "Description": "Sets the avatar image on the image panel"
+  },
+  {
+    "Signature": "SteamUtils.GetConnectedUniverse()",
+    "Description": "Returns the connected universe"
+  },
+  {
+    "Signature": "SteamUtils.GetAppID()",
+    "Description": "Returns the appid of the current app"
+  },
+  {
+    "Signature": "VRUtils.GetVRAppPropertyData( unsigned nAppID )",
+    "Description": "Get application properties for a VR app with the specified appID"
+  },
+  {
+    "Signature": "VRUtils.LaunchSteamApp( unsigned nAppID )",
+    "Description": "Launches a Steam application using OpenVR."
+  },
+  {
+    "Signature": "Buffs.GetName( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetClass( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetTexture( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetDuration( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetDieTime( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetRemainingTime( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetElapsedTime( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetCreationTime( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetStackCount( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.IsDebuff( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.IsHidden( integer nEntity, integer nBuff )",
+    "Description": ""
+  },
+  {
+    "Signature": "Buffs.GetCaster( integer nEntity, integer nBuff )",
+    "Description": "Get the owner of the ability responsible for the modifier."
+  },
+  {
+    "Signature": "Buffs.GetParent( integer nEntity, integer nBuff )",
+    "Description": "Get the unit the modifier is parented to."
+  },
+  {
+    "Signature": "Buffs.GetAbility( integer nEntity, integer nBuff )",
+    "Description": "Get the ability that generated the modifier."
+  },
+  {
+    "Signature": "Players.GetMaxPlayers()",
+    "Description": "Get the maximum number of players in the game."
+  },
+  {
+    "Signature": "Players.GetMaxTeamPlayers()",
+    "Description": "Get the maximum number of players on teams."
+  },
+  {
+    "Signature": "Players.GetLocalPlayer()",
+    "Description": "Get the local player ID."
+  },
+  {
+    "Signature": "Players.IsValidPlayerID( integer iPlayerID )",
+    "Description": "Is the nth player a valid player?"
+  },
+  {
+    "Signature": "Players.GetPlayerName( integer iPlayerID )",
+    "Description": "Return the name of a player."
+  },
+  {
+    "Signature": "Players.GetPlayerHeroEntityIndex( integer iPlayerID )",
+    "Description": "Get the entity index of the hero controlled by this player."
+  },
+  {
+    "Signature": "Players.GetSelectedEntities( integer iPlayerID )",
+    "Description": "Get the entities this player has selected."
+  },
+  {
+    "Signature": "Players.GetQueryUnit( integer iPlayerID )",
+    "Description": "Get the entities this player is querying."
+  },
+  {
+    "Signature": "Players.GetLocalPlayerPortraitUnit()",
+    "Description": "Get local player current portrait unit. (ie. Player\u0027s hero or primary selected unit.)"
+  },
+  {
+    "Signature": "Players.CanPlayerBuyback( integer iPlayerID )",
+    "Description": "Can the player buy back?"
+  },
+  {
+    "Signature": "Players.HasCustomGameTicketForPlayerID( integer iPlayerID )",
+    "Description": "Does this player have a custom game ticket?"
+  },
+  {
+    "Signature": "Players.GetAssists( integer iPlayerID )",
+    "Description": "The number of assists credited to a player."
+  },
+  {
+    "Signature": "Players.GetClaimedDenies( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetClaimedMisses( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetDeaths( integer iPlayerID )",
+    "Description": "The number of deaths a player has suffered."
+  },
+  {
+    "Signature": "Players.GetDenies( integer iPlayerID )",
+    "Description": "The number of denies credited to a player."
+  },
+  {
+    "Signature": "Players.GetGold( integer iPlayerID )",
+    "Description": "The amount of gold a player has."
+  },
+  {
+    "Signature": "Players.GetKills( integer iPlayerID )",
+    "Description": "The number of kills credited to a player."
+  },
+  {
+    "Signature": "Players.GetLastBuybackTime( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetLastHitMultikill( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetLastHits( integer iPlayerID )",
+    "Description": "The number of last hits credited to a player."
+  },
+  {
+    "Signature": "Players.GetLastHitStreak( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetLevel( integer iPlayerID )",
+    "Description": "The current level of a player."
+  },
+  {
+    "Signature": "Players.GetMisses( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetNearbyCreepDeaths( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetReliableGold( integer iPlayerID )",
+    "Description": "Total reliable gold for this player."
+  },
+  {
+    "Signature": "Players.GetRespawnSeconds( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetStreak( integer iPlayerID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Players.GetTotalEarnedGold( integer iPlayerID )",
+    "Description": "Total gold earned in this game by this player."
+  },
+  {
+    "Signature": "Players.GetTotalEarnedXP( integer iPlayerID )",
+    "Description": "Total xp earned in this game by this player."
+  },
+  {
+    "Signature": "Players.GetUnreliableGold( integer iPlayerID )",
+    "Description": "Total unreliable gold for this player."
+  },
+  {
+    "Signature": "Players.GetTeam( integer iPlayerID )",
+    "Description": "Get the team this player is on."
+  },
+  {
+    "Signature": "Players.GetGoldPerMin( integer iPlayerID )",
+    "Description": "Average gold earned per minute for this player."
+  },
+  {
+    "Signature": "Players.GetXPPerMin( integer iPlayerID )",
+    "Description": "Average xp earned per minute for this player."
+  },
+  {
+    "Signature": "Players.GetPlayerSelectedHero( integer iPlayerID )",
+    "Description": "Return the name of the hero a player is controlling."
+  },
+  {
+    "Signature": "Players.GetPlayerColor( integer iPlayerID )",
+    "Description": "Get the player color."
+  },
+  {
+    "Signature": "Players.IsSpectator( integer iPlayerID )",
+    "Description": "Is this player a spectator."
+  },
+  {
+    "Signature": "Players.PlayerPortraitClicked( integer nClickedPlayerID, boolean bHoldingCtrl, boolean bHoldingAlt )",
+    "Description": "."
+  },
+  {
+    "Signature": "Players.BuffClicked( integer nEntity, integer nBuffSerial, boolean bAlert )",
+    "Description": "."
+  },
+  {
+    "Signature": "Players.IsLocalPlayerInPerspectiveCamera()",
+    "Description": "If player is in perspective camera, returns true. Else, false"
+  },
+  {
+    "Signature": "Players.GetPerspectivePlayerEntityIndex()",
+    "Description": "If player is in perspective mode, returns the followed players entity index.  Else, -1."
+  },
+  {
+    "Signature": "Players.GetPerspectivePlayerId()",
+    "Description": "If player is in perspective mode, returns the followed players id.  Else, -1."
+  },
+  {
+    "Signature": "Entities.GetAbsOrigin( integer nEntityIndex )",
+    "Description": "Get the world origin of the entity."
+  },
+  {
+    "Signature": "Entities.GetForward( integer nEntityIndex )",
+    "Description": "Get the forward vector of the entity."
+  },
+  {
+    "Signature": "Entities.GetRight( integer nEntityIndex )",
+    "Description": "Get the right vector of the entity."
+  },
+  {
+    "Signature": "Entities.GetUp( integer nEntityIndex )",
+    "Description": "Get the up vector of the entity."
+  },
+  {
+    "Signature": "Entities.GetAllBuildingEntities()",
+    "Description": "Get all the building entities."
+  },
+  {
+    "Signature": "Entities.GetAllHeroEntities()",
+    "Description": "Get all the hero entities."
+  },
+  {
+    "Signature": "Entities.GetAllEntitiesByName( cstring pszName )",
+    "Description": "Get all the entities with a given name."
+  },
+  {
+    "Signature": "Entities.GetAllEntitiesByClassname( cstring pszName )",
+    "Description": "Get all the entities with a given classname."
+  },
+  {
+    "Signature": "Entities.GetAllCreatureEntities()",
+    "Description": "Get all the creature entities."
+  },
+  {
+    "Signature": "Entities.GetAllEntities()",
+    "Description": "Get all the entities."
+  },
+  {
+    "Signature": "Entities.CanBeDominated( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasAttackCapability( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasCastableAbilities( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasFlyingVision( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasFlyMovementCapability( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasGroundMovementCapability( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasMovementCapability( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasScepter( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasUpgradeableAbilities( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasUpgradeableAbilitiesThatArentMaxed( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsAlive( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsAncient( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsAttackImmune( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsBarracks( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsBlind( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsBoss( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsRoshan( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsBuilding( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsCommandRestricted( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsConsideredHero( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsControllableByAnyPlayer( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsCourier( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsCreature( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsCreep( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsCreepHero( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsDeniable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsDominated( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsEnemy( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsEvadeDisabled( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsFort( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsFrozen( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsGeneratedByEconItem( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsHallofFame( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsDisarmed( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsHero( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsHexed( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsIllusion( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsInRangeOfFountain( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsInventoryEnabled( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsInvisible( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsInvulnerable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsLaneCreep( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsLowAttackPriority( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsMagicImmune( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsMuted( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsNeutralUnitType( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsNightmared( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsOther( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsOutOfGame( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsOwnedByAnyPlayer( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsPhantom( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsRangedAttacker( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsRealHero( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsRooted( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsSelectable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsShop( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsSilenced( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsSpeciallyDeniable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsStunned( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsSummoned( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsTower( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsUnselectable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsWard( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsZombie( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.NoHealthBar( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.NoTeamMoveTo( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.NoTeamSelect( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.NotOnMinimap( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.NotOnMinimapForEnemies( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.NoUnitCollision( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.PassivesDisabled( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.ProvidesVision( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.UsesHeroAbilityNumbers( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsMoving( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetAbilityCount( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetCombatClassAttack( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetCombatClassDefend( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetCurrentVisionRange( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetDamageBonus( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetDamageMax( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetDamageMin( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetDayTimeVisionRange( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetHealth( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetHealthPercent( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetHealthThinkRegen( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetLevel( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetMaxHealth( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetNightTimeVisionRange( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetPlayerOwnerID( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetStates( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetTotalPurchasedUpgradeGoldCost( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetTeamNumber( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetHealthBarOffset( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetAttackRange( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetAttackSpeed( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetAttacksPerSecond( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetBaseAttackTime( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetBaseMagicalResistanceValue( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetBaseMoveSpeed( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetBonusPhysicalArmor( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetCollisionPadding( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetEffectiveInvisibilityLevel( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetHasteFactor( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetHullRadius( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetIdealSpeed( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetIncreasedAttackSpeed( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetMana( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetManaThinkRegen( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetMaxMana( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetMagicalArmorValue( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetPaddedCollisionRadius( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetPercentInvisible( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetPhysicalArmorValue( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetProjectileCollisionSize( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetRingRadius( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetSecondsPerAttack( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.ManaFraction( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetClassname( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetDisplayedUnitName( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetSelectionGroup( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetSoundSet( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetUnitLabel( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetUnitName( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetTotalDamageTaken( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsControllableByPlayer( integer nEntityIndex, integer nPlayerIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetChosenTarget( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.HasItemInInventory( integer nEntityIndex, cstring pItemName )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetRangeToUnit( integer nEntityIndex, integer nEntityIndex2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsEntityInRange( integer nEntityIndex, integer nEntityIndex2, float flRange )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetMoveSpeedModifier( integer nEntityIndex, float flBaseSpeed )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.CanAcceptTargetToAttack( integer nEntityIndex, integer nEntityIndex2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.InState( integer nEntityIndex, integer nState )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetArmorForDamageType( integer nEntityIndex, integer iDamageType )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetArmorReductionForDamageType( integer nEntityIndex, integer iDamageType )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.IsInRangeOfShop( integer nEntityIndex, integer iShopType, boolean bSpecific )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetNumItemsInStash( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetNumItemsInInventory( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetItemInSlot( integer nEntityIndex, integer nSlotIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetAbility( integer nEntityIndex, integer nSlotIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetAbilityByName( integer nEntityIndex, cstring pszAbilityName )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetNumBuffs( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetBuff( integer nEntityIndex, integer nBufIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetAbilityPoints( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetCurrentXP( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetNeededXPToLevel( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Entities.GetSelectionEntities( integer nEntityIndex )",
+    "Description": "Get the currently selected entities"
+  },
+  {
+    "Signature": "Entities.IsValidEntity( integer nEntityIndex )",
+    "Description": "Is this a valid entity index?"
+  },
+  {
+    "Signature": "Entities.IsItemPhysical( integer nEntityIndex )",
+    "Description": "Is this entity an item container in the world?"
+  },
+  {
+    "Signature": "Entities.GetContainedItem( integer nEntityIndex )",
+    "Description": "Get the item contained in this physical item container."
+  },
+  {
+    "Signature": "Abilities.GetAbilityName( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAbilityTextureName( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAssociatedPrimaryAbilities( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAssociatedSecondaryAbilities( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetHotkeyOverride( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetIntrinsicModifierName( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetSharedCooldownName( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.AbilityReady( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.CanAbilityBeUpgraded( integer nEntityIndex )",
+    "Description": "Returns an AbilityLearnResult_t"
+  },
+  {
+    "Signature": "Abilities.CanBeExecuted( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAbilityDamage( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAbilityDamageType( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAbilityTargetFlags( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAbilityTargetTeam( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAbilityTargetType( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAbilityType( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetBehavior( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCastRange( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetChannelledManaCostPerSecond( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCurrentCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetEffectiveLevel( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetHeroLevelRequiredToUpgrade( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetLevel( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetManaCost( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetMaxLevel( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.AttemptToUpgrade( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.CanLearn( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAutoCastState( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetToggleState( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.HasScepterUpgradeTooltip( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsActivated( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsActivatedChanging( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsAttributeBonus( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsAutocast( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsCooldownReady( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsDisplayedAbility( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsHidden( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsHiddenWhenStolen( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsInAbilityPhase( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsItem( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsMarkedAsDirty( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsMuted( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsOnCastbar( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsOnLearnbar( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsOwnersGoldEnough( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsOwnersGoldEnoughForUpgrade( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsOwnersManaEnough( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsPassive( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsRecipe( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsSharedWithTeammates( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsStealable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsStolen( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsToggle( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetAOERadius( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetBackswingTime( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCastPoint( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetChannelStartTime( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetChannelTime( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCooldown( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCooldownLength( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCooldownTime( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCooldownTimeRemaining( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetDuration( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetUpgradeBlend( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetLocalPlayerActiveAbility()",
+    "Description": "Get the local player\u0027s current active ability. (Pre-cast targetting state.)"
+  },
+  {
+    "Signature": "Abilities.GetCaster( integer nAbilityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetCustomValueFor( integer nAbilityIndex, cstring pszAbilityVarName )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetLevelSpecialValueFor( integer nAbilityIndex, cstring szName, integer nLevel )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.GetSpecialValueFor( integer nAbilityIndex, cstring szName )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.IsCosmetic( integer nAbilityIndex, integer nTargetEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Abilities.ExecuteAbility( integer nAbilityEntIndex, integer nCasterEntIndex, boolean bIsQuickCast )",
+    "Description": "Attempt to execute the specified ability (Equivalent to clicking the ability in the HUD action bar)"
+  },
+  {
+    "Signature": "Abilities.CreateDoubleTapCastOrder( integer nAbilityEntIndex, integer nCasterEntIndex )",
+    "Description": "Attempt to double-tap (self-cast) the specified ability (Equivalent to double-clicking the ability in the HUD action bar)"
+  },
+  {
+    "Signature": "Abilities.PingAbility( integer nAbilityIndex )",
+    "Description": "Ping the specified ability (Equivalent to alt-clicking the ability in the HUD action bar)"
+  },
+  {
+    "Signature": "Abilities.GetKeybind( integer nAbilityEntIndex )",
+    "Description": "Returns the keybind (as a string) for the specified ability."
+  },
+  {
+    "Signature": "Items.ShouldDisplayCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.AlwaysDisplayCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.ShowSecondaryCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.CanBeSoldByLocalPlayer( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.CanDoubleTapCast( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.ForceHideCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsAlertableItem( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsCastOnPickup( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsDisassemblable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsDroppable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsInnatelyDisassemblable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsKillable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsMuted( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsPermanent( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsPurchasable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsRecipe( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsRecipeGenerated( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsSellable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.IsStackable( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.ProRatesChargesWhenSelling( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.RequiresCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.CanBeExecuted( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetCost( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetCurrentCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetSecondaryCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetDisplayedCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetInitialCharges( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetItemColor( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetShareability( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetAbilityTextureSF( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetAssembledTime( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetPurchaseTime( integer nEntityIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.GetPurchaser( integer nItemID )",
+    "Description": ""
+  },
+  {
+    "Signature": "Items.LocalPlayerDisassembleItem( integer nItem )",
+    "Description": "Attempt to have the local player disassemble the specified item. Returns false if the order wasn\u0027t issued."
+  },
+  {
+    "Signature": "Items.LocalPlayerDropItemFromStash( integer nItem )",
+    "Description": "Attempt to have the local player drop the specified item from its stash. Returns false if the order wasn\u0027t issued."
+  },
+  {
+    "Signature": "Items.LocalPlayerItemAlertAllies( integer nItem )",
+    "Description": "Attempt to have the local player alert allies about the specified item. Returns false if the order wasn\u0027t issued."
+  },
+  {
+    "Signature": "Items.LocalPlayerMoveItemToStash( integer nItem )",
+    "Description": "Attempt to have the local player move the specified item to its stash. Returns false if the order wasn\u0027t issued."
+  },
+  {
+    "Signature": "Items.LocalPlayerSellItem( integer nItem )",
+    "Description": "Attempt to have the local player sell the specified item. Returns false if the order wasn\u0027t issued."
+  },
+  {
+    "Signature": "Game.Time()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GetGameTime()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GetGameFrameTime()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GetDOTATime( boolean bIncludePreGame, boolean bIncludeNegativeTime )",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.IsGamePaused()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.IsInToolsMode()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GetGameWinner()",
+    "Description": "Return the team id of the winning team."
+  },
+  {
+    "Signature": "Game.GetStateTransitionTime()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GetCustomGameDifficulty()",
+    "Description": "Get the difficulty setting of the game."
+  },
+  {
+    "Signature": "Game.IsHUDFlipped()",
+    "Description": "Returns true if the user has enabled flipped HUD"
+  },
+  {
+    "Signature": "Game.GetScreenWidth()",
+    "Description": "Returns the width of the display."
+  },
+  {
+    "Signature": "Game.GetScreenHeight()",
+    "Description": "Returns the height of the display."
+  },
+  {
+    "Signature": "Game.WorldToScreenX( float x, float y, float z )",
+    "Description": "Converts the specified x,y,z world co-ordinate into an x screen coordinate. Returns -1 if behind the camera"
+  },
+  {
+    "Signature": "Game.WorldToScreenY( float x, float y, float z )",
+    "Description": "Converts the specified x,y,z world co-ordinate into a y screen coordinate. Returns -1 if behind the camera"
+  },
+  {
+    "Signature": "Game.ScreenXYToWorld( integer nX, integer nY )",
+    "Description": "Converts the specified x, y screen coordinates into a x, y, z world coordinates."
+  },
+  {
+    "Signature": "Game.GetKeybindForAbility( integer iSlot )",
+    "Description": "Returns the keybind (as a string) for the requested ability slot."
+  },
+  {
+    "Signature": "Game.GetKeybindForInventorySlot( integer iSlot )",
+    "Description": "Returns the keybind (as a string) for the requested inventory slot."
+  },
+  {
+    "Signature": "Game.CreateCustomKeyBind( cstring pszKey, cstring pszCommand )",
+    "Description": "Create a new keybind."
+  },
+  {
+    "Signature": "Game.GetNianFightTimeLeft()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GetState()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GameStateIs( integer nState )",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GameStateIsBefore( integer nState )",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GameStateIsAfter( integer nState )",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.AddCommand( cstring pszCommandName, js_value callback, cstring pszDescription, integer nFlags )",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.GetLocalPlayerID()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.PlayerJoinTeam( integer nTeamID )",
+    "Description": "Assign the local player to the specified team"
+  },
+  {
+    "Signature": "Game.AutoAssignPlayersToTeams()",
+    "Description": "Assign the currently unassigned players to teams"
+  },
+  {
+    "Signature": "Game.ShufflePlayerTeamAssignments()",
+    "Description": "Shuffle the team assignments of all of the players currently assigned to a team."
+  },
+  {
+    "Signature": "Game.SetRemainingSetupTime( float flSeconds )",
+    "Description": "Set the remaining seconds in team setup before the game starts. -1 to stop the countdown timer"
+  },
+  {
+    "Signature": "Game.SetAutoLaunchDelay( float flSeconds )",
+    "Description": "Set the amount of time in seconds that will be set as the remaining time when all players are assigned to a team."
+  },
+  {
+    "Signature": "Game.SetAutoLaunchEnabled( boolean bEnable )",
+    "Description": "Enable or disable automatically starting the game once all players are assigned to a team"
+  },
+  {
+    "Signature": "Game.GetAutoLaunchEnabled()",
+    "Description": "Return true of false indicating if automatically starting the game is enabled."
+  },
+  {
+    "Signature": "Game.SetTeamSelectionLocked( boolean bLockTeams )",
+    "Description": "Lock the team selection preventing players from swiching teams."
+  },
+  {
+    "Signature": "Game.GetTeamSelectionLocked()",
+    "Description": "Returns true or false to indicate if team selection is locked"
+  },
+  {
+    "Signature": "Game.GetAllTeamIDs()",
+    "Description": "Get all team IDs"
+  },
+  {
+    "Signature": "Game.GetAllPlayerIDs()",
+    "Description": "Get all player IDs"
+  },
+  {
+    "Signature": "Game.GetUnassignedPlayerIDs()",
+    "Description": "Get unassigned player IDs"
+  },
+  {
+    "Signature": "Game.GetPlayerUltimateStateOrTime( integer nPlayerID )",
+    "Description": "Get info about the player hero ultimate ability"
+  },
+  {
+    "Signature": "Game.IsPlayerMuted( integer nPlayerID )",
+    "Description": "Whether the local player has muted text and voice chat for the specified player id"
+  },
+  {
+    "Signature": "Game.SetPlayerMuted( integer nPlayerID, boolean bMuted )",
+    "Description": "Set whether the local player has muted text and voice chat for the specified player id"
+  },
+  {
+    "Signature": "Game.GetTeamDetails( integer nTeam )",
+    "Description": "Get detailed information for the given team"
+  },
+  {
+    "Signature": "Game.GetLocalPlayerInfo()",
+    "Description": "Get details for the local player"
+  },
+  {
+    "Signature": "Game.GetPlayerItems( integer nPlayerID )",
+    "Description": "Get info about the player items."
+  },
+  {
+    "Signature": "Game.GetPlayerInfo( integer nPlayerID )",
+    "Description": "Get info about the given player"
+  },
+  {
+    "Signature": "Game.GetPlayerIDsOnTeam( integer nTeam )",
+    "Description": "Get player IDs for the given team"
+  },
+  {
+    "Signature": "Game.ServerCmd( cstring pMsg )",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.SetDotaRefractHeroes( boolean bEnabled )",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.FinishGame()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.EmitSound( cstring pSoundEventName )",
+    "Description": "Emit a sound for the local player. Returns an integer handle that can be passed to StopSound. (Returns 0 on failure.)"
+  },
+  {
+    "Signature": "Game.StopSound( integer nHandle )",
+    "Description": "Stop a current playing sound on the local player. Takes handle from a call to EmitSound."
+  },
+  {
+    "Signature": "Game.IsShopOpen()",
+    "Description": "Ask whether the in game shop is open."
+  },
+  {
+    "Signature": "Game.SetCustomShopEntityString( cstring pszCustomShopEntityString )",
+    "Description": "Set custom shop context."
+  },
+  {
+    "Signature": "Game.GetMapInfo()",
+    "Description": "Return information about the current map."
+  },
+  {
+    "Signature": "Game.PrepareUnitOrders( js_raw_args args )",
+    "Description": "Orders from the local player - takes a single arguments object that supports: dotaunitorder_t OrderType, ent_index TargetIndex, vector Position, ent_index AbilityIndex, OrderIssuer_t OrderIssuer, ent_index UnitIndex, OrderQueueBehavior_t QueueBehavior, bool ShowEffects."
+  },
+  {
+    "Signature": "Game.DropItemAtCursor( integer nControlledUnitEnt, integer nItemEnt )",
+    "Description": "Order a unit to drop the specified item at the current cursor location."
+  },
+  {
+    "Signature": "Game.Length2D( js_value vec1, js_value vec2 )",
+    "Description": "Calculate 2D length."
+  },
+  {
+    "Signature": "Game.Normalized( js_value vec )",
+    "Description": "Returns normalized vector."
+  },
+  {
+    "Signature": "Game.EnterAbilityLearnMode()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.EndAbilityLearnMode()",
+    "Description": ""
+  },
+  {
+    "Signature": "Game.IsInAbilityLearnMode()",
+    "Description": ""
+  },
+  {
+    "Signature": "GameUI.SetDefaultUIEnabled( integer nElementType, boolean bVisible )",
+    "Description": "Control whether the default UI is enabled"
+  },
+  {
+    "Signature": "GameUI.CustomUIConfig( js_raw_args args )",
+    "Description": "Get the current UI configuration"
+  },
+  {
+    "Signature": "GameUI.PingMinimapAtLocation( js_value vec3 )",
+    "Description": "Create a minimap ping at the given location"
+  },
+  {
+    "Signature": "GameUI.SetMouseCallback( js_value callbackFn )",
+    "Description": "Install a mouse input filter"
+  },
+  {
+    "Signature": "GameUI.EnableAliMode( boolean bEnable, integer nPort, js_value offsetVal, float flScale )",
+    "Description": ""
+  },
+  {
+    "Signature": "GameUI.GetCursorPosition( js_raw_args args )",
+    "Description": "Get the current mouse position."
+  },
+  {
+    "Signature": "GameUI.FindScreenEntities( js_raw_args args )",
+    "Description": "Return the entity index of the entity under the given screen position."
+  },
+  {
+    "Signature": "GameUI.GetScreenWorldPosition( js_raw_args args )",
+    "Description": "Get the world position of the screen position, or null if the cursor is out of the world."
+  },
+  {
+    "Signature": "GameUI.WasMousePressed( integer nButtonNum )",
+    "Description": "Install a mouse input filter"
+  },
+  {
+    "Signature": "GameUI.WasMouseDoublePressed( integer nButtonNum )",
+    "Description": "Install a mouse input filter"
+  },
+  {
+    "Signature": "GameUI.IsMouseDown( integer nButtonNum )",
+    "Description": "Install a mouse input filter"
+  },
+  {
+    "Signature": "GameUI.IsShiftDown()",
+    "Description": "Is the shift button pressed?"
+  },
+  {
+    "Signature": "GameUI.IsAltDown()",
+    "Description": "Is the alt button pressed?"
+  },
+  {
+    "Signature": "GameUI.IsControlDown()",
+    "Description": "Is the control button pressed?"
+  },
+  {
+    "Signature": "GameUI.GetClickBehaviors()",
+    "Description": "Get the current UI click interaction mode."
+  },
+  {
+    "Signature": "GameUI.SelectUnit( integer nEntityIndex, boolean bAddToGroup )",
+    "Description": "Select a unit, adding it to the group or replacing the current selection."
+  },
+  {
+    "Signature": "GameUI.GetCameraLookAtPosition()",
+    "Description": "Get the current look at position."
+  },
+  {
+    "Signature": "GameUI.GetCameraLookAtPositionHeightOffset()",
+    "Description": "Get the current look at position height offset."
+  },
+  {
+    "Signature": "GameUI.SetCameraPitchMin( float flPitchMin )",
+    "Description": "Set the minimum camera pitch angle."
+  },
+  {
+    "Signature": "GameUI.SetCameraPitchMax( float flPitchMax )",
+    "Description": "Set the maximum camera pitch angle."
+  },
+  {
+    "Signature": "GameUI.SetCameraYaw( float flCameraYaw )",
+    "Description": "Set the camera\u0027s yaw."
+  },
+  {
+    "Signature": "GameUI.SetCameraLookAtPositionHeightOffset( float flCameraLookAtHeightOffset )",
+    "Description": "Offset the camera\u0027s look at point."
+  },
+  {
+    "Signature": "GameUI.SetCameraTerrainAdjustmentEnabled( boolean bEnabled )",
+    "Description": "Set whether the camera should automatically adjust to average terrain height."
+  },
+  {
+    "Signature": "GameUI.SetCameraDistance( float flDistance )",
+    "Description": "Set the camera distance from the look at point."
+  },
+  {
+    "Signature": "GameUI.SetRenderBottomInsetOverride( integer nInset )",
+    "Description": "Set the gap between the bottom of the screen and the game rendering viewport. (Value expressed as pixels in a normalized 1024x768 viewport.)"
+  },
+  {
+    "Signature": "GameUI.SetRenderTopInsetOverride( integer nInset )",
+    "Description": "Set the gap between the top of the screen and the game rendering viewport. (Value expressed as pixels in a normalized 1024x768 viewport.)"
+  },
+  {
+    "Signature": "GameUI.SetCameraTarget( integer nTargetEntIndex )",
+    "Description": "Set the camera target for the local player, or -1 to clear."
+  },
+  {
+    "Signature": "GameUI.SetCameraTargetPosition( js_value vec3, float flLerp )",
+    "Description": "Set the camera target as position for the local player over specified lerp."
+  },
+  {
+    "Signature": "GameUI.WorldToScreenXYClamped( js_value vec3 )",
+    "Description": "Converts the specified x,y,z world co-ordinate into an x,y screen coordinate. Will clamp position to always be in front of camera.  Position returned as 0-\u003e1.0"
+  },
+  {
+    "Signature": "GameUI.GetPlayerScoreboardScore( cstring pszScoreboardName )",
+    "Description": "Get the current players scoreboard score for the specified zone."
+  },
+  {
+    "Signature": "Particles.CreateParticle( cstring pParticleName, integer nAttachType, integer nEntityToAttach )",
+    "Description": "Create a particle system"
+  },
+  {
+    "Signature": "Particles.ReleaseParticleIndex( integer iIndex )",
+    "Description": "Release a particle system"
+  },
+  {
+    "Signature": "Particles.DestroyParticleEffect( integer iIndex, boolean bDestroyImmediately )",
+    "Description": "Destroy a particle system"
+  },
+  {
+    "Signature": "Particles.SetParticleControl( integer iIndex, integer iPoint, js_value vPosVal )",
+    "Description": "Set a control point on a particle system"
+  },
+  {
+    "Signature": "Particles.SetParticleControlForward( integer iIndex, integer iPoint, js_value vForwardVal )",
+    "Description": "Set the orientation on a control point on a particle system"
+  },
+  {
+    "Signature": "Particles.SetParticleAlwaysSimulate( integer iIndex )",
+    "Description": ""
+  },
+  {
+    "Signature": "Particles.SetParticleControlEnt( integer iIndex, integer iPoint, integer iEntIndex, integer iAttachType, cstring pszAttachName, js_value vecFallbackPositionVal, boolean bIncludeWearables )",
+    "Description": "Set a control point to track an entity on a particle system"
+  },
+  {
+    "Signature": "LocalInventory.HasItemByDefinition( integer nDefIndex )",
+    "Description": "Does the player have an inventory item of a given item definition index?"
+  },
+  {
+    "Signature": "Msg( js_raw_args js_raw_args_1 )",
+    "Description": "Log a message"
+  },
+  {
+    "Signature": "DispatchEvent( js_raw_args js_raw_args_1 )",
+    "Description": "Dispatch an event"
+  },
+  {
+    "Signature": "DispatchEventAsync( js_raw_args js_raw_args_1 )",
+    "Description": "Dispatch an event to occur later"
+  },
+  {
+    "Signature": "RegisterEventHandler( js_raw_args js_raw_args_1 )",
+    "Description": "Register an event handler"
+  },
+  {
+    "Signature": "RegisterForUnhandledEvent( js_raw_args js_raw_args_1 )",
+    "Description": "Register a handler for an event that is not otherwise handled"
+  },
+  {
+    "Signature": "UnregisterForUnhandledEvent( js_raw_args js_raw_args_1 )",
+    "Description": "Remove an unhandled event handler"
+  },
+  {
+    "Signature": "FindChildInContext( js_raw_args js_raw_args_1 )",
+    "Description": "Find an element"
+  },
+  {
+    "Signature": "AsyncWebRequest( js_raw_args js_raw_args_1 )",
+    "Description": "Make a web request"
+  },
+  {
+    "Signature": "CreatePanel( js_raw_args js_raw_args_1 )",
+    "Description": "Create a new panel"
+  },
+  {
+    "Signature": "Localize( js_raw_args js_raw_args_1 )",
+    "Description": "Localize a string"
+  },
+  {
+    "Signature": "Language( js_raw_args js_raw_args_1 )",
+    "Description": "Get the current language"
+  },
+  {
+    "Signature": "Schedule( js_raw_args js_raw_args_1 )",
+    "Description": "Schedule a function to be called later"
+  },
+  {
+    "Signature": "CancelScheduled( js_raw_args js_raw_args_1 )",
+    "Description": "Cancelse a scheduled function"
+  },
+  {
+    "Signature": "GetContextPanel( js_raw_args js_raw_args_1 )",
+    "Description": "Get the current panel context"
+  },
+  {
+    "Signature": "RegisterKeyBind( js_raw_args js_raw_args_1 )",
+    "Description": "Register a key binding"
+  },
+  {
+    "Signature": "Each( js_raw_args js_raw_args_1 )",
+    "Description": "Call a function on each given item"
+  },
+  {
+    "Signature": "Panel.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Panel.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUIRoot.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAHud.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAQuickStats.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAKillCam.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.text( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.html( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Label.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.steamid( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.accountid( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTAAvatarImage.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "CustomUIElement.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.UpdateFocusInContext()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BHasHoverStyle()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetAcceptsFocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetDisableFocusOnMouseDown( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BHasKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetScrollParentToFitWhenFocused( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BScrollParentToFitWhenFocused()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.IsSelected()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BHasDescendantKeyFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BLoadLayout( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BLoadLayoutFromString( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.LoadLayoutFromStringAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.LoadLayoutAsync( cstring cstring_1, boolean boolean_2, boolean boolean_3 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BLoadLayoutSnippet( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BCreateChildren( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetTopOfInputContext( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetDialogVariable( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetDialogVariableInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetDialogVariableTime( cstring cstring_1, int64 int64_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ScrollToTop()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ScrollToBottom()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ScrollToLeftEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ScrollToRightEdge()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.ScrollParentToMakePanelFit( unknown_variant_type unknown_variant_type_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BCanSeeInParentScroll()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.GetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetAttributeInt( cstring cstring_1, integer integer_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetAttributeString( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetAttributeUInt32( cstring cstring_1, unsigned unsigned_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetInputNamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.RegisterForReadyEvents( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.BReadyForDisplay()",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetReadyForDisplay( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.SetPanelEvent( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.RunScriptInPanelContext( js_raw_args js_raw_args_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.rememberchildfocus( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "DOTACustomUITypeContainer.paneltype()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.visible( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.enabled( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.checked( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.defaultfocus( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.inputnamespace( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.hittest( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.hittestchildren( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.tabindex( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.selectionpos_x( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.selectionpos_y( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.id()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.layoutfile()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.contentwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.contentheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.desiredlayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.desiredlayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.actuallayoutwidth()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.actuallayoutheight()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.actualxoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.actualyoffset()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.scrolloffset_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.scrolloffset_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.actualuiscale_y()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.actualuiscale_x()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.style()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.AddClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.RemoveClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.BHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.BAscendantHasClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.SetHasClass( cstring cstring_1, boolean boolean_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.ToggleClass( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.SwitchClass( cstring cstring_1, cstring cstring_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.ClearPanelEvent( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.SetDraggable( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.IsDraggable()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.GetChildCount()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.GetChild( integer integer_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.GetChildIndex( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.Children()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.FindChildrenWithClassTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.GetParent()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.SetParent( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.FindChild( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.FindChildTraverse( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.FindChildInLayoutFile( cstring cstring_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.RemoveAndDeleteChildren()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.MoveChildBefore( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.MoveChildAfter( unknown_variant_type unknown_variant_type_1, unknown_variant_type unknown_variant_type_2 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.GetPositionWithinWindow()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.ApplyStyles( boolean boolean_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.ClearPropertyFromCode( unknown_variant_type unknown_variant_type_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.DeleteAsync( float float_1 )",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.BIsTransparent()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.BAcceptsInput()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.BAcceptsFocus()",
+    "Description": ""
+  },
+  {
+    "Signature": "Image.SetFocus()",
+    "Description": ""
+  },
+  {
+    "Si
