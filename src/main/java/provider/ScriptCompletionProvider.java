@@ -1,5 +1,6 @@
 package provider;
 
+import com.google.gson.JsonArray;
 import com.intellij.codeInsight.completion.CompletionContributor;
 import com.intellij.codeInsight.completion.CompletionParameters;
 import com.intellij.codeInsight.completion.CompletionResultSet;
@@ -47,7 +48,8 @@ public class ScriptCompletionProvider extends AbstractCompletionProvider{
      * @return
      */
     private int addCollectedVariables(PsiElement element, CompletionResultSet result) {
-        Collection<LookupElement> items = CompletionProviderUtils.createFromPsiItemsForScript(JSScriptBuilt.jsScripts, DotaIcons.DOTA_ICON);
+        JsonArray array = JSScriptBuilt.listAllScriptsFromJsonFile();
+        Collection<LookupElement> items = CompletionProviderUtils.createFromPsiItemsForScript(array, DotaIcons.DOTA_ICON_JS);
         result.addAllElements(items);
         return items.size();
     }

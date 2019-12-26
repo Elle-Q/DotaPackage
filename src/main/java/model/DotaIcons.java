@@ -13,7 +13,10 @@ import javax.swing.*;
 public class DotaIcons {
 
     @JvmField
-    public static Icon DOTA_ICON = load("/icons/logo1.png");
+    public static Icon DOTA_ICON_CONST = load("/icons/dota_const.png");
+
+    @JvmField
+    public static Icon DOTA_ICON_JS = load("/icons/dota_js2.png");
 
     private static Icon load(String resourcePath){
         return IconLoader.findIcon(resourcePath);

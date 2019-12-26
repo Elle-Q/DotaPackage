@@ -1,140 +1,23 @@
-2019-12-22 20:45:28,582 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 20:45:28,582 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 20:45:29,986 [   1404]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 1374 ms
-2019-12-22 20:45:30,302 [   1720]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 20:45:31,947 [   3365]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1645 ms
-2019-12-22 20:45:31,947 [   3365]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 20:45:32,507 [   3925]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 20:45:33,438 [   4856]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:false
-2019-12-22 20:45:33,445 [   4863]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
-2019-12-22 20:45:33,445 [   4863]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
-2019-12-22 20:45:33,448 [   4866]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
-2019-12-22 20:45:33,685 [   5103]   INFO - s.index.CompilerReferenceIndex - backward reference index version differ due to: class java.io.FileNotFoundException
-2019-12-22 20:45:34,746 [   6164]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
-2019-12-22 20:45:36,744 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 20:45:36,745 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 20:45:37,789 [   1045]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 1016 ms
-2019-12-22 20:45:37,805 [   1061]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 20:45:37,831 [   1087]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 20:45:38,295 [   1551]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 464 ms
-2019-12-22 20:45:38,295 [   1551]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 20:45:38,420 [   1676]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 20:45:39,113 [   2369]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 2370 ms
-2019-12-22 20:45:47,795 [  11051]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
-2019-12-22 20:45:47,891 [  11147]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
-2019-12-22 20:45:47,891 [  11147]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
-2019-12-22 20:45:47,893 [  11149]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
-2019-12-22 20:45:47,993 [  11249]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
-2019-12-22 20:45:48,905 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 20:45:48,905 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 20:45:49,458 [    553]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 529 ms
-2019-12-22 20:45:49,472 [    567]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 20:45:49,488 [    583]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 20:45:49,863 [    958]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 375 ms
-2019-12-22 20:45:49,863 [    958]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 20:45:49,953 [   1048]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 20:45:50,051 [   1146]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1148 ms
-2019-12-22 20:45:51,097 [   2192]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
-2019-12-22 20:45:51,101 [   2196]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
-2019-12-22 20:45:51,105 [   2200]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
-2019-12-22 20:45:51,168 [   2263]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
-2019-12-22 20:45:51,382 [   2477]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 3 ms
-2019-12-22 20:45:51,842 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 20:45:51,842 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 20:45:52,419 [    577]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 557 ms
-2019-12-22 20:45:52,431 [    589]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 20:45:52,448 [    606]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 20:45:52,907 [   1065]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 459 ms
-2019-12-22 20:45:52,907 [   1065]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 20:45:52,998 [   1156]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 20:45:53,096 [   1254]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1255 ms
-2019-12-22 20:45:55,048 [   3206]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
-2019-12-22 20:45:55,112 [   3270]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
-2019-12-22 20:45:55,113 [   3271]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
-2019-12-22 20:45:55,115 [   3273]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
-2019-12-22 20:45:55,569 [   3727]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 7 ms
-2019-12-22 20:45:56,146 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 20:45:56,146 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 20:45:57,034 [    888]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 867 ms
-2019-12-22 20:45:57,047 [    901]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 20:45:57,065 [    919]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 20:45:57,556 [   1410]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 491 ms
-2019-12-22 20:45:57,556 [   1410]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 20:45:57,813 [   1667]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 20:45:58,357 [   2211]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 2212 ms
-2019-12-22 20:46:29,032 [  32886]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
-2019-12-22 20:46:29,035 [  32889]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
-2019-12-22 20:46:29,035 [  32889]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
-2019-12-22 20:46:29,037 [  32891]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
-2019-12-22 20:46:29,093 [  32947]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 4 ms
-2019-12-22 20:46:29,832 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 20:46:29,833 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 20:46:30,564 [    732]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 711 ms
-2019-12-22 20:46:30,577 [    745]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 20:46:30,595 [    763]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 20:46:31,054 [   1222]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 459 ms
-2019-12-22 20:46:31,054 [   1222]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 20:46:31,176 [   1344]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 20:46:31,389 [   1557]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1558 ms
-2019-12-22 20:46:34,482 [   4650]   WARN - channel.DefaultChannelPipeline - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method)
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
-	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
-	at io.netty.buffer.PooledHeapByteBuf.setBytes(PooledHeapByteBuf.java:261)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
-	at java.lang.Thread.run(Thread.java:748)
-2019-12-22 21:35:47,015 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 21:35:47,016 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 21:35:50,098 [   3083]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 2923 ms
-2019-12-22 21:35:50,341 [   3326]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 21:35:51,847 [   4832]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1506 ms
-2019-12-22 21:35:51,847 [   4832]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 21:35:52,028 [   5013]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 21:35:55,122 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 21:35:55,123 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 21:35:56,729 [   1607]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 1569 ms
-2019-12-22 21:35:56,862 [   1740]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 21:35:56,915 [   1793]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 21:35:58,326 [   3204]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1411 ms
-2019-12-22 21:35:58,326 [   3204]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 21:35:59,113 [   3991]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 21:35:59,453 [   4331]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 4332 ms
-2019-12-22 21:35:59,788 [   4666]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
-2019-12-22 21:35:59,884 [   4762]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
-2019-12-22 21:35:59,884 [   4762]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
-2019-12-22 21:35:59,886 [   4764]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
-2019-12-22 21:36:00,067 [   4945]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 7 ms
-2019-12-22 21:36:01,055 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 21:36:01,056 [      1]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 21:36:03,478 [   2423]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 2397 ms
-2019-12-22 21:36:03,614 [   2559]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 21:36:03,637 [   2582]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 21:36:04,701 [   3646]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 1064 ms
-2019-12-22 21:36:04,701 [   3646]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 21:36:04,984 [   3929]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 21:36:05,101 [   4046]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 4048 ms
-2019-12-22 21:36:23,111 [  22056]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:false
-2019-12-22 21:36:23,115 [  22060]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
-2019-12-22 21:36:23,115 [  22060]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
-2019-12-22 21:36:23,117 [  22062]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
-2019-12-22 21:36:23,170 [  22115]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 2 ms
-2019-12-22 21:36:23,687 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
-2019-12-22 21:36:23,687 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
-2019-12-22 21:36:24,251 [    564]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 540 ms
-2019-12-22 21:36:24,264 [    577]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
-2019-12-22 21:36:24,282 [    595]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
-2019-12-22 21:36:24,821 [   1134]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 539 ms
-2019-12-22 21:36:24,822 [   1135]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
-2019-12-22 21:36:24,935 [   1248]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
-2019-12-22 21:36:25,108 [   1421]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1422 ms
-2019-12-22 21:39:49,040 [ 205353]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.
+2019-12-26 18:15:03,525 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-12-26 18:15:03,525 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
+2019-12-26 18:15:04,098 [    573]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 553 ms
+2019-12-26 18:15:04,263 [    738]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
+2019-12-26 18:15:04,820 [   1295]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 557 ms
+2019-12-26 18:15:04,821 [   1296]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
+2019-12-26 18:15:04,945 [   1420]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-12-26 18:15:05,077 [   1552]   INFO - .incremental.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:false
+2019-12-26 18:15:05,080 [   1555]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2019-12-26 18:15:05,080 [   1555]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin incremental compilation enabled for JS: false
+2019-12-26 18:15:05,083 [   1558]   INFO - kotlin.jps.build.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2019-12-26 18:15:05,106 [   1581]   INFO - s.index.CompilerReferenceIndex - backward reference index version differ due to: class java.io.FileNotFoundException
+2019-12-26 18:15:05,445 [   1920]   INFO - .incremental.IncProjectBuilder - Cleaned output directories in 10 ms
+2019-12-26 18:15:06,582 [      0]   INFO - etbrains.jps.cmdline.BuildMain - ==================================================
+2019-12-26 18:15:06,582 [      0]   INFO - etbrains.jps.cmdline.BuildMain - Build process started. Classpath: C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/jps-launcher.jar;C:/Program Files/Java/jdk1.8.0_202/lib/tools.jar;C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.jetbrains.intellij.idea/ideaIU/2018.3.6/2e2c15e56d37d92191897f961b66978907e5e3f8/ideaIU-2018.3.6/lib/optimizedFileManager.jar
+2019-12-26 18:15:07,153 [    571]   INFO - etbrains.jps.cmdline.BuildMain - Connection to IDE established in 547 ms
+2019-12-26 18:15:07,165 [    583]   INFO - penapi.util.io.win32.IdeaWin32 - Native filesystem for Windows is operational
+2019-12-26 18:15:07,182 [    600]   INFO - jps.cmdline.JpsModelLoaderImpl - Loading model: project path = E:/booststrap, global options path = E:/GradelDemos/DotaPackage/build/idea-sandbox/config/options
+2019-12-26 18:15:07,573 [    991]   INFO - jps.cmdline.JpsModelLoaderImpl - Model loaded in 391 ms
+2019-12-26 18:15:07,573 [    991]   INFO - jps.cmdline.JpsModelLoaderImpl - Project has 1 modules, 32 libraries
+2019-12-26 18:15:07,665 [   1083]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=602
+2019-12-26 18:15:07,789 [   1207]   INFO - etbrains.jps.cmdline.BuildMain - Pre-loaded process ready in 1208 ms
+2019-12-26 22:14:27,698 [14361116]   INFO - etbrains.jps.cmdline.BuildMain - Build canceled, but no build session is running. Exiting.

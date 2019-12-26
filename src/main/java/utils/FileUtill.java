@@ -1,9 +1,7 @@
 package utils;
 
 import com.google.gson.*;
-import com.intellij.icons.AllIcons;
 
-import javax.sound.midi.SoundbankResource;
 import java.io.*;
 
 /**
@@ -33,8 +31,10 @@ public class FileUtill {
                 if (line.contains("<code>")) {
                     funcJson = new JsonObject();
                     flag = true;
-                    funcJson.addProperty("Signature", line.replace("<code>", "")
-                            .replace("</code>", "").replace("|", "").trim());
+                    String result = line.replace("<code>", "")
+                            .replace("</code>", "").replace("|", "").trim();
+                    funcJson.addProperty("function",result.split("\\(")[0]);
+                    funcJson.addProperty("Signature", result);
                 }
                 if (isSave && funcJson.size() > 1) {
                     array.add(funcJson);

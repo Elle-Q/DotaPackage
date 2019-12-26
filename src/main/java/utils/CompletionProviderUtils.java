@@ -1,7 +1,10 @@
 package utils;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.intellij.codeInsight.lookup.LookupElement;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
+import js.script.JSScriptBuilt;
 import model.DotaIcon;
 
 import javax.swing.*;
@@ -34,19 +37,25 @@ public class CompletionProviderUtils {
     /**
      * 创建js脚本部分
      *
-     * @param jsScripts
+     * @param icon
      * @return
      */
-    public static Collection<LookupElement> createFromPsiItemsForScript(HashMap<String, Set<String>> jsScripts, Icon icon) {
+    public static Collection<LookupElement> createFromPsiItemsForScript(JsonArray array, Icon icon) {
         List<LookupElement> results = new ArrayList<>();
-        jsScripts.forEach((k,v) -> {
-            LookupElementBuilder element = LookupElementBuilder.create(v.toArray()[0])
-                    .withLookupString(k).withTypeText((String) v.toArray()[1]);
-            if (null != icon) {
-                element = element.withIcon(icon);
+        if (null != array) {
+            for (int i = 0; i < array.size(); i++) {
+                JsonObject object = (JsonObject) array.get(i);
+                String function = object.get("function").getAsString();
+                String Signature = object.get("Signature").getAsString();
+                String Description = object.get("Description").getAsString();
+                LookupElementBuilder element = LookupElementBuilder.create(Signature)
+                        .withLookupString(function).withTypeText(Description);
+                if (null != icon) {
+                    element = element.withIcon(icon);
+                }
+                results.add(element);
             }
-            results.add(element);
-        });
+        }
         return results;
     }
 }

@@ -52,7 +52,7 @@ public class ConstantCompletionProvider extends AbstractCompletionProvider {
      * @return
      */
     private int addCollectedVariables(PsiElement element, CompletionResultSet result) {
-        Collection<LookupElement> items = CompletionProviderUtils.createFromPsiItemsForVal(JSConstantsBuilt.jsConstants, DotaIcons.DOTA_ICON);
+        Collection<LookupElement> items = CompletionProviderUtils.createFromPsiItemsForVal(JSConstantsBuilt.jsConstants, DotaIcons.DOTA_ICON_CONST);
         result.addAllElements(items);
         return items.size();
     }
