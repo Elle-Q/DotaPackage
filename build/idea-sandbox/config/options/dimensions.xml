@@ -5,6 +5,9 @@
     <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="560" y="369" />
     <location key="SettingsEditor.0.0.1920.1080" x="409" y="189" />
     <location key="ProcessPopupWindow.0.0.1920.1080" x="1216" y="965" />
+    <location key="search.everywhere.popup.0.0.1920.1080" x="584" y="240" />
+    <location key="com.intellij.ide.util.TipDialog.1920.0.2560.1080" x="2824" y="342" />
     <size key="ProcessPopupWindow.0.0.1920.1080" width="400" height="119" />
+    <size key="search.everywhere.popup.0.0.1920.1080" width="672" height="678" />
   </component>
 </application>

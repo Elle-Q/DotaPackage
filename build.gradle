@@ -22,9 +22,10 @@ dependencies {
 intellij {
     type = 'IU'
     version '2018.3.6'
-    pluginName = 'Ember.js'
-    plugins = ['JavaScriptLanguage', 'CSS']
+    pluginName = 'Ember.tool'
+    plugins = ['JavaScriptLanguage', 'CSS', 'intellij-emmylua']
 }
+
 patchPluginXml {
     changeNotes """
       Add change notes here.<br>

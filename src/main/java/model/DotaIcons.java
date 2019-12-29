@@ -1,7 +1,6 @@
 package model;
 
 import com.intellij.openapi.util.IconLoader;
-import com.intellij.util.PlatformIcons;
 import kotlin.jvm.JvmField;
 
 import javax.swing.*;
@@ -13,7 +12,7 @@ import javax.swing.*;
 public class DotaIcons {
 
     @JvmField
-    public static Icon DOTA_ICON_CONST = load("/icons/dota_const.png");
+    public static Icon DOTA_ICON_LUA = load("/icons/dota_lua.png");
 
     @JvmField
     public static Icon DOTA_ICON_JS = load("/icons/dota_js2.png");

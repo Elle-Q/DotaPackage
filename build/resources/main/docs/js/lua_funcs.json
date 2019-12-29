@@ -1,0 +1,2942 @@
+[
+  {
+    "trigger": "assert",
+    "contents": "assert(${1:variable}${0:, optional sMessage})"
+  },
+  {
+    "trigger": "collectgarbage",
+    "contents": "collectgarbage(${1:\"Collect\"}${2:, optional int arg})"
+  },
+  {
+    "trigger": "dofile",
+    "contents": "dofile(${1:filename})"
+  },
+  {
+    "trigger": "error",
+    "contents": "error(${1:message}${2:, optional int level })"
+  },
+  {
+    "trigger": "getfenv",
+    "contents": "getfenv(${1:function foo})"
+  },
+  {
+    "trigger": "getmetatable",
+    "contents": "getmetatable(${1:object})"
+  },
+  {
+    "trigger": "load",
+    "contents": "load(${1:function func}${2:, optional string chunkname})"
+  },
+  {
+    "trigger": "loadfile",
+    "contents": "loadfile(${1:string filename})"
+  },
+  {
+    "trigger": "loadstring",
+    "contents": "loadstring(${1:string str}${2:, optional string chunkname})"
+  },
+  {
+    "trigger": "next",
+    "contents": "next(${1:table t}${2:, optional previndex})"
+  },
+  {
+    "trigger": "pcall",
+    "contents": "pcall(${1:function foo}${2:, optional arg, ...})"
+  },
+  {
+    "trigger": "xpcall",
+    "contents": "xpcall(${1:function foo}, ${2:err})"
+  },
+  {
+    "trigger": "print",
+    "contents": "print(${1:args})"
+  },
+  {
+    "trigger": "rawequal",
+    "contents": "rawequal(${1:v1}, ${2:v2})"
+  },
+  {
+    "trigger": "rawget",
+    "contents": "rawget(${1:table}, ${2:index})"
+  },
+  {
+    "trigger": "rawset",
+    "contents": "rawset(${1:table}, ${2:index}, ${3:value})"
+  },
+  {
+    "trigger": "select",
+    "contents": "select(${1:#}, ${2:...})"
+  },
+  {
+    "trigger": "setfenv",
+    "contents": "setfenv(${1:function foo}, ${2:table})"
+  },
+  {
+    "trigger": "setmetatable",
+    "contents": "setmetatable(${1:table}, ${2:metatable})"
+  },
+  {
+    "trigger": "tonumber",
+    "contents": "tonumber(${1:string}${2:, optional base})"
+  },
+  {
+    "trigger": "type",
+    "contents": "type(${1:v}) \u003d \"${2:table}\""
+  },
+  {
+    "trigger": "AddFOWViewer",
+    "contents": "AddFOWViewer(${1:nTeamID}, ${2:vLocation}, ${3:flRadius}, ${4:flDuration}, ${5:bObstructedVision})"
+  },
+  {
+    "trigger": "AngleDiff",
+    "contents": "AngleDiff(${1:float_1}, ${2:float_2})"
+  },
+  {
+    "trigger": "AppendToLogFile",
+    "contents": "AppendToLogFile(${1:string_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "ApplyDamage",
+    "contents": "ApplyDamage(${1:handle_1})"
+  },
+  {
+    "trigger": "AxisAngleToQuaternion",
+    "contents": "AxisAngleToQuaternion(${1:vector}, ${2:float})"
+  },
+  {
+    "trigger": "CalcClosestPointOnEntityOBB",
+    "contents": "CalcClosestPointOnEntityOBB(${1:handle_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "CalcDistanceBetweenEntityOBB",
+    "contents": "CalcDistanceBetweenEntityOBB(${1:handle_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "CalcDistanceToLineSegment2D",
+    "contents": "CalcDistanceToLineSegment2D(${1:Vector_1}, ${2:Vector_2}, ${3:Vector_3})"
+  },
+  {
+    "trigger": "CancelEntityIOEvents",
+    "contents": "CancelEntityIOEvents(${1:ehandle_1})"
+  },
+  {
+    "trigger": "ClearTeamCustomHealthbarColor",
+    "contents": "ClearTeamCustomHealthbarColor(${1:teamNumber})"
+  },
+  {
+    "trigger": "CreateDamageInfo",
+    "contents": "CreateDamageInfo(${1:hInflictor}, ${2:hAttacker}, ${3:flDamage}, ${4:Vector_4}, ${5:float_5}, ${6:int_6})"
+  },
+  {
+    "trigger": "CreateEffect",
+    "contents": "CreateEffect(${1:handle_1})"
+  },
+  {
+    "trigger": "CreateHTTPRequest",
+    "contents": "CreateHTTPRequest(${1:string_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "CreateHTTPRequestScriptVM",
+    "contents": "CreateHTTPRequestScriptVM(${1:string_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "CreateHeroForPlayer",
+    "contents": "CreateHeroForPlayer(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "CreateIllusions",
+    "contents": "CreateIllusions(${1:hOwner}, ${2:hHeroToCopy}, ${3:hModiiferKeys}, ${4:nNumIllusions}, ${5:nPadding}, ${6:bScramblePosition}, ${7:bFindClearSpace})"
+  },
+  {
+    "trigger": "CreateItem",
+    "contents": "CreateItem(${1:string_1}, ${2:handle_2}, ${3:handle_3})"
+  },
+  {
+    "trigger": "CreateItemOnPositionForLaunch",
+    "contents": "CreateItemOnPositionForLaunch(${1:butdoesn\u0027tclearaspace}, ${2:handle_2})"
+  },
+  {
+    "trigger": "CreateItemOnPositionSync",
+    "contents": "CreateItemOnPositionSync(${1:Vector_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "CreateModifierThinker",
+    "contents": "CreateModifierThinker(${1:hCaster}, ${2:hAbility}, ${3:modifierName}, ${4:paramTable}, ${5:vOrigin}, ${6:nTeamNumber}, ${7:bPhantomBlocker})"
+  },
+  {
+    "trigger": "CreateSceneEntity",
+    "contents": "CreateSceneEntity(${1:string_1})"
+  },
+  {
+    "trigger": "CreateTempTree",
+    "contents": "CreateTempTree(${1:vLocation}, ${2:flDuration})"
+  },
+  {
+    "trigger": "CreateTempTreeWithModel",
+    "contents": "CreateTempTreeWithModel(${1:vLocation}, ${2:flDuration}, ${3:szModelName})"
+  },
+  {
+    "trigger": "CreateTrigger",
+    "contents": "CreateTrigger(${1:vecMin}, ${2:vecMax}, ${3:Vector_3})"
+  },
+  {
+    "trigger": "CreateTriggerRadiusApproximate",
+    "contents": "CreateTriggerRadiusApproximate(${1:vecOrigin}, ${2:flRadius})"
+  },
+  {
+    "trigger": "CreateUnitByName",
+    "contents": "CreateUnitByName(${1:string_1}, ${2:Vector_2}, ${3:bool_3}, ${4:handle_4}, ${5:handle_5}, ${6:int_6})"
+  },
+  {
+    "trigger": "CreateUnitByNameAsync",
+    "contents": "CreateUnitByNameAsync(${1:string_1}, ${2:Vector_2}, ${3:bool_3}, ${4:handle_4}, ${5:handle_5}, ${6:int_6}, ${7:handle_7})"
+  },
+  {
+    "trigger": "CreateUnitFromTable",
+    "contents": "CreateUnitFromTable(${1:handle_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "CrossVectors",
+    "contents": "CrossVectors(${1:vector}, ${2:vector})"
+  },
+  {
+    "trigger": "DebugBreak",
+    "contents": "DebugBreak()"
+  },
+  {
+    "trigger": "DebugDrawBox",
+    "contents": "DebugDrawBox(${1:origin}, ${2:mins}, ${3:maxs}, ${4:forward}, ${5:r}, ${6:g}, ${7:b}, ${8:a})"
+  },
+  {
+    "trigger": "DebugDrawBoxDirection",
+    "contents": "DebugDrawBoxDirection(${1:cent}, ${2:min}, ${3:max}, ${4:forward}, ${5:vRgb}, ${6:a}, ${7:duration})"
+  },
+  {
+    "trigger": "DebugDrawCircle",
+    "contents": "DebugDrawCircle(${1:center}, ${2:vRgb}, ${3:a}, ${4:rad}, ${5:ztest}, ${6:duration})"
+  },
+  {
+    "trigger": "DebugDrawClear",
+    "contents": "DebugDrawClear()"
+  },
+  {
+    "trigger": "DebugDrawLine",
+    "contents": "DebugDrawLine(${1:origin}, ${2:target}, ${3:r}, ${4:g}, ${5:b}, ${6:ztest}, ${7:duration})"
+  },
+  {
+    "trigger": "DebugDrawLine_vCol",
+    "contents": "DebugDrawLine_vCol(${1:start}, ${2:end}, ${3:vRgb}, ${4:a}, ${5:ztest})"
+  },
+  {
+    "trigger": "DebugDrawScreenTextLine",
+    "contents": "DebugDrawScreenTextLine(${1:x}, ${2:y}, ${3:lineOffset}, ${4:text}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:duration})"
+  },
+  {
+    "trigger": "DebugDrawSphere",
+    "contents": "DebugDrawSphere(${1:center}, ${2:vRgb}, ${3:a}, ${4:rad}, ${5:ztest}, ${6:duration})"
+  },
+  {
+    "trigger": "DebugDrawText",
+    "contents": "DebugDrawText(${1:origin}, ${2:text}, ${3:bViewCheck}, ${4:duration})"
+  },
+  {
+    "trigger": "DebugScreenTextPretty",
+    "contents": "DebugScreenTextPretty(${1:x}, ${2:y}, ${3:lineOffset}, ${4:text}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:duration}, ${10:font}, ${11:size}, ${12:bBold})"
+  },
+  {
+    "trigger": "DestroyDamageInfo",
+    "contents": "DestroyDamageInfo(${1:handle_1})"
+  },
+  {
+    "trigger": "DoCleaveAttack",
+    "contents": "DoCleaveAttack(${1:hAttacker}, ${2:hTarget}, ${3:hAbility}, ${4:fDamage}, ${5:fRadius}, ${6:effectName}, ${7:float_7}, ${8:string_8})"
+  },
+  {
+    "trigger": "DoEntFire",
+    "contents": "DoEntFire(${1:string_1}, ${2:string_2}, ${3:string_3}, ${4:float_4}, ${5:handle_5}, ${6:handle_6})"
+  },
+  {
+    "trigger": "DoEntFireByInstanceHandle",
+    "contents": "DoEntFireByInstanceHandle(${1:handle_1}, ${2:string_2}, ${3:string_3}, ${4:float_4}, ${5:handle_5}, ${6:handle_6})"
+  },
+  {
+    "trigger": "DoIncludeScript",
+    "contents": "DoIncludeScript(${1:internal}, ${2:handle_2})"
+  },
+  {
+    "trigger": "DoScriptAssert",
+    "contents": "DoScriptAssert(${1:bool_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "DoUniqueString",
+    "contents": "DoUniqueString(${1:string_1})"
+  },
+  {
+    "trigger": "DotProduct",
+    "contents": "DotProduct(${1:Vector_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "EmitAnnouncerSound",
+    "contents": "EmitAnnouncerSound(${1:string_1})"
+  },
+  {
+    "trigger": "EmitAnnouncerSoundForPlayer",
+    "contents": "EmitAnnouncerSoundForPlayer(${1:string_1}, ${2:int_2})"
+  },
+  {
+    "trigger": "EmitAnnouncerSoundForTeam",
+    "contents": "EmitAnnouncerSoundForTeam(${1:string_1}, ${2:int_2})"
+  },
+  {
+    "trigger": "EmitAnnouncerSoundForTeamOnLocation",
+    "contents": "EmitAnnouncerSoundForTeamOnLocation(${1:string_1}, ${2:int_2}, ${3:Vector_3})"
+  },
+  {
+    "trigger": "EmitGlobalSound",
+    "contents": "EmitGlobalSound(${1:string_1})"
+  },
+  {
+    "trigger": "EmitSoundOn",
+    "contents": "EmitSoundOn(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "EmitSoundOnClient",
+    "contents": "EmitSoundOnClient(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "EmitSoundOnLocationForAllies",
+    "contents": "EmitSoundOnLocationForAllies(${1:Vector_1}, ${2:string_2}, ${3:handle_3})"
+  },
+  {
+    "trigger": "EmitSoundOnLocationWithCaster",
+    "contents": "EmitSoundOnLocationWithCaster(${1:vLocation}, ${2:soundName}, ${3:hCaster})"
+  },
+  {
+    "trigger": "EntIndexToHScript",
+    "contents": "EntIndexToHScript(${1:int_1})"
+  },
+  {
+    "trigger": "ExecuteOrderFromTable",
+    "contents": "ExecuteOrderFromTable(${1:handle_1})"
+  },
+  {
+    "trigger": "ExponentialDecay",
+    "contents": "ExponentialDecay(${1:float_1}, ${2:float_2}, ${3:float_3})"
+  },
+  {
+    "trigger": "FindClearRandomPositionAroundUnit",
+    "contents": "FindClearRandomPositionAroundUnit(${1:handle_1}, ${2:handle_2}, ${3:int_3})"
+  },
+  {
+    "trigger": "FindClearSpaceForUnit",
+    "contents": "FindClearSpaceForUnit(${1:handle_1}, ${2:Vector_2}, ${3:bool_3})"
+  },
+  {
+    "trigger": "FindUnitsInLine",
+    "contents": "FindUnitsInLine(${1:int_1}, ${2:Vector_2}, ${3:Vector_3}, ${4:handle_4}, ${5:float_5}, ${6:int_6}, ${7:int_7}, ${8:int_8})"
+  },
+  {
+    "trigger": "FindUnitsInRadius",
+    "contents": "FindUnitsInRadius(${1:int_1}, ${2:Vector_2}, ${3:handle_3}, ${4:float_4}, ${5:int_5}, ${6:int_6}, ${7:int_7}, ${8:int_8}, ${9:bool_9})"
+  },
+  {
+    "trigger": "FireEntityIOInputNameOnly",
+    "contents": "FireEntityIOInputNameOnly(${1:ehandle_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "FireEntityIOInputString",
+    "contents": "FireEntityIOInputString(${1:ehandle_1}, ${2:string_2}, ${3:string_3})"
+  },
+  {
+    "trigger": "FireEntityIOInputVec",
+    "contents": "FireEntityIOInputVec(${1:ehandle_1}, ${2:string_2}, ${3:Vector_3})"
+  },
+  {
+    "trigger": "FireGameEvent",
+    "contents": "FireGameEvent(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "FireGameEventLocal",
+    "contents": "FireGameEventLocal(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "FrameTime",
+    "contents": "FrameTime()"
+  },
+  {
+    "trigger": "GetDedicatedServerKey",
+    "contents": "GetDedicatedServerKey(${1:version})"
+  },
+  {
+    "trigger": "GetDedicatedServerKeyV2",
+    "contents": "GetDedicatedServerKeyV2(${1:version})"
+  },
+  {
+    "trigger": "GetEntityIndexForTreeId",
+    "contents": "GetEntityIndexForTreeId(${1:unsigned_1})"
+  },
+  {
+    "trigger": "GetFrameCount",
+    "contents": "GetFrameCount()"
+  },
+  {
+    "trigger": "GetGroundHeight",
+    "contents": "GetGroundHeight(${1:Vector_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "GetGroundPosition",
+    "contents": "GetGroundPosition(${1:Vector_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "GetItemCost",
+    "contents": "GetItemCost(${1:string_1})"
+  },
+  {
+    "trigger": "GetItemDefOwnedCount",
+    "contents": "GetItemDefOwnedCount(${1:int_1}, ${2:int_2})"
+  },
+  {
+    "trigger": "GetItemDefQuantity",
+    "contents": "GetItemDefQuantity(${1:int_1}, ${2:int_2})"
+  },
+  {
+    "trigger": "GetListenServerHost",
+    "contents": "GetListenServerHost()"
+  },
+  {
+    "trigger": "GetLobbyEventGameDetails",
+    "contents": "GetLobbyEventGameDetails()"
+  },
+  {
+    "trigger": "GetMapName",
+    "contents": "GetMapName()"
+  },
+  {
+    "trigger": "GetMaxOutputDelay",
+    "contents": "GetMaxOutputDelay(${1:ehandle_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "GetPhysAngularVelocity",
+    "contents": "GetPhysAngularVelocity(${1:handle_1})"
+  },
+  {
+    "trigger": "GetPhysVelocity",
+    "contents": "GetPhysVelocity(${1:handle_1})"
+  },
+  {
+    "trigger": "GetSystemDate",
+    "contents": "GetSystemDate()"
+  },
+  {
+    "trigger": "GetSystemTime",
+    "contents": "GetSystemTime()"
+  },
+  {
+    "trigger": "GetTargetAOELocation",
+    "contents": "GetTargetAOELocation(${1:int_1}, ${2:int_2}, ${3:int_3}, ${4:Vector_4}, ${5:int_5}, ${6:int_6}, ${7:int_7})"
+  },
+  {
+    "trigger": "GetTargetLinearLocation",
+    "contents": "GetTargetLinearLocation(${1:int_1}, ${2:int_2}, ${3:int_3}, ${4:Vector_4}, ${5:int_5}, ${6:int_6}, ${7:int_7})"
+  },
+  {
+    "trigger": "GetTeamHeroKills",
+    "contents": "GetTeamHeroKills(${1:intteamID})"
+  },
+  {
+    "trigger": "GetTeamName",
+    "contents": "GetTeamName(${1:intteamID})"
+  },
+  {
+    "trigger": "GetTreeIdForEntityIndex",
+    "contents": "GetTreeIdForEntityIndex(${1:int_1})"
+  },
+  {
+    "trigger": "GetWorldMaxX",
+    "contents": "GetWorldMaxX()"
+  },
+  {
+    "trigger": "GetWorldMaxY",
+    "contents": "GetWorldMaxY()"
+  },
+  {
+    "trigger": "GetWorldMinX",
+    "contents": "GetWorldMinX()"
+  },
+  {
+    "trigger": "GetWorldMinY",
+    "contents": "GetWorldMinY()"
+  },
+  {
+    "trigger": "InitLogFile",
+    "contents": "InitLogFile(${1:string_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "IsClient",
+    "contents": "IsClient()"
+  },
+  {
+    "trigger": "IsDedicatedServer",
+    "contents": "IsDedicatedServer()"
+  },
+  {
+    "trigger": "IsInToolsMode",
+    "contents": "IsInToolsMode()"
+  },
+  {
+    "trigger": "IsLocationVisible",
+    "contents": "IsLocationVisible(${1:nTeamNumber}, ${2:vLocation})"
+  },
+  {
+    "trigger": "IsMarkedForDeletion",
+    "contents": "IsMarkedForDeletion(${1:handle_1})"
+  },
+  {
+    "trigger": "IsServer",
+    "contents": "IsServer()"
+  },
+  {
+    "trigger": "IsValidEntity",
+    "contents": "IsValidEntity(${1:handle_1})"
+  },
+  {
+    "trigger": "LerpVectors",
+    "contents": "LerpVectors(${1:vector}, ${2:vector}, ${3:float})"
+  },
+  {
+    "trigger": "LimitPathingSearchDepth",
+    "contents": "LimitPathingSearchDepth(${1:float_1})"
+  },
+  {
+    "trigger": "LinkLuaModifier",
+    "contents": "LinkLuaModifier(${1:className}, ${2:fileName}, ${3:LuaModifierType})"
+  },
+  {
+    "trigger": "ListenToGameEvent",
+    "contents": "ListenToGameEvent(${1:string_1}, ${2:handle_2}, ${3:handle_3})"
+  },
+  {
+    "trigger": "LoadKeyValues",
+    "contents": "LoadKeyValues(${1:string_1})"
+  },
+  {
+    "trigger": "LoadKeyValuesFromString",
+    "contents": "LoadKeyValuesFromString(${1:string_1})"
+  },
+  {
+    "trigger": "LocalTime",
+    "contents": "LocalTime()"
+  },
+  {
+    "trigger": "MakeStringToken",
+    "contents": "MakeStringToken(${1:string_1})"
+  },
+  {
+    "trigger": "MinimapEvent",
+    "contents": "MinimapEvent(${1:nTeamID}, ${2:hEntity}, ${3:nXCoord}, ${4:nYCoord}, ${5:nEventType}, ${6:nEventDuration})"
+  },
+  {
+    "trigger": "Msg",
+    "contents": "Msg(${1:string_1})"
+  },
+  {
+    "trigger": "PauseGame",
+    "contents": "PauseGame(${1:bool_1})"
+  },
+  {
+    "trigger": "PlayerInstanceFromIndex",
+    "contents": "PlayerInstanceFromIndex(${1:int_1})"
+  },
+  {
+    "trigger": "PrecacheEntityFromTable",
+    "contents": "PrecacheEntityFromTable(${1:string_1}, ${2:handle_2}, ${3:handle_3})"
+  },
+  {
+    "trigger": "PrecacheEntityListFromTable",
+    "contents": "PrecacheEntityListFromTable(${1:handle_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "PrecacheItemByNameAsync",
+    "contents": "PrecacheItemByNameAsync(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "PrecacheItemByNameSync",
+    "contents": "PrecacheItemByNameSync(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "PrecacheModel",
+    "contents": "PrecacheModel(${1:modelName}, ${2:context})"
+  },
+  {
+    "trigger": "PrecacheResource",
+    "contents": "PrecacheResource(${1:string_1}, ${2:string_2}, ${3:handle_3})"
+  },
+  {
+    "trigger": "PrecacheUnitByNameAsync",
+    "contents": "PrecacheUnitByNameAsync(${1:string_1}, ${2:handle_2}, ${3:int_3})"
+  },
+  {
+    "trigger": "PrecacheUnitByNameSync",
+    "contents": "PrecacheUnitByNameSync(${1:string_1}, ${2:handle_2}, ${3:int_3})"
+  },
+  {
+    "trigger": "PrecacheUnitFromTableAsync",
+    "contents": "PrecacheUnitFromTableAsync(${1:handle_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "PrecacheUnitFromTableSync",
+    "contents": "PrecacheUnitFromTableSync(${1:handle_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "PrintLinkedConsoleMessage",
+    "contents": "PrintLinkedConsoleMessage(${1:string_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "RandomFloat",
+    "contents": "RandomFloat(${1:float_1}, ${2:float_2})"
+  },
+  {
+    "trigger": "RandomInt",
+    "contents": "RandomInt(${1:int_1}, ${2:int_2})"
+  },
+  {
+    "trigger": "RandomVector",
+    "contents": "RandomVector(${1:float_1})"
+  },
+  {
+    "trigger": "RegisterCustomAnimationScriptForModel",
+    "contents": "RegisterCustomAnimationScriptForModel(${1:string_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "RegisterSpawnGroupFilterProxy",
+    "contents": "RegisterSpawnGroupFilterProxy(${1:string_1})"
+  },
+  {
+    "trigger": "ReloadMOTD",
+    "contents": "ReloadMOTD()"
+  },
+  {
+    "trigger": "RemoveSpawnGroupFilterProxy",
+    "contents": "RemoveSpawnGroupFilterProxy(${1:string_1})"
+  },
+  {
+    "trigger": "ResolveNPCPositions",
+    "contents": "ResolveNPCPositions(${1:Vector_1}, ${2:float_2})"
+  },
+  {
+    "trigger": "RollPercentage",
+    "contents": "RollPercentage(${1:intnPct})"
+  },
+  {
+    "trigger": "RotateOrientation",
+    "contents": "RotateOrientation(${1:QAngle_1}, ${2:QAngle_2})"
+  },
+  {
+    "trigger": "RotatePosition",
+    "contents": "RotatePosition(${1:Vector_1}, ${2:QAngle_2}, ${3:Vector_3})"
+  },
+  {
+    "trigger": "RotateQuaternionByAxisAngle",
+    "contents": "RotateQuaternionByAxisAngle(${1:quaternion}, ${2:vector}, ${3:float})"
+  },
+  {
+    "trigger": "RotationDelta",
+    "contents": "RotationDelta(${1:QAngle_1}, ${2:QAngle_2})"
+  },
+  {
+    "trigger": "RotationDeltaAsAngularVelocity",
+    "contents": "RotationDeltaAsAngularVelocity(${1:QAngle_1}, ${2:QAngle_2})"
+  },
+  {
+    "trigger": "Say",
+    "contents": "Say(${1:handle_1}, ${2:string_2}, ${3:bool_3})"
+  },
+  {
+    "trigger": "ScreenShake",
+    "contents": "ScreenShake(${1:SHAKE_START\u003d0}, ${2:SHAKE_STOP\u003d1}, ${3:float_3}, ${4:float_4}, ${5:float_5}, ${6:int_6}, ${7:bool_7})"
+  },
+  {
+    "trigger": "SendOverheadEventMessage",
+    "contents": "SendOverheadEventMessage(${1:DOTAPlayersendToPlayer}, ${2:intiMessageType}, ${3:EntitytargetEntity}, ${4:intiValue}, ${5:DOTAPlayersourcePlayer})"
+  },
+  {
+    "trigger": "SendToConsole",
+    "contents": "SendToConsole(${1:string_1})"
+  },
+  {
+    "trigger": "SendToServerConsole",
+    "contents": "SendToServerConsole(${1:string_1})"
+  },
+  {
+    "trigger": "SetOpvarFloatAll",
+    "contents": "SetOpvarFloatAll(${1:string_1}, ${2:string_2}, ${3:string_3}, ${4:float_4})"
+  },
+  {
+    "trigger": "SetOpvarFloatPlayer",
+    "contents": "SetOpvarFloatPlayer(${1:string_1}, ${2:string_2}, ${3:string_3}, ${4:float_4}, ${5:handle_5})"
+  },
+  {
+    "trigger": "SetPhysAngularVelocity",
+    "contents": "SetPhysAngularVelocity(${1:handle_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "SetQuestName",
+    "contents": "SetQuestName(${1:string_1})"
+  },
+  {
+    "trigger": "SetQuestPhase",
+    "contents": "SetQuestPhase(${1:int_1})"
+  },
+  {
+    "trigger": "SetRenderingEnabled",
+    "contents": "SetRenderingEnabled(${1:ehandle_1}, ${2:bool_2})"
+  },
+  {
+    "trigger": "SetTeamCustomHealthbarColor",
+    "contents": "SetTeamCustomHealthbarColor(${1:teamNumber}, ${2:r}, ${3:g}, ${4:b})"
+  },
+  {
+    "trigger": "ShowCustomHeaderMessage",
+    "contents": "ShowCustomHeaderMessage(${1:constchar*pszMessage}, ${2:intnPlayerID}, ${3:intnValue}, ${4:floatflTime})"
+  },
+  {
+    "trigger": "ShowGenericPopup",
+    "contents": "ShowGenericPopup(${1:string_1}, ${2:string_2}, ${3:string_3}, ${4:string_4}, ${5:int_5})"
+  },
+  {
+    "trigger": "ShowGenericPopupToPlayer",
+    "contents": "ShowGenericPopupToPlayer(${1:handle_1}, ${2:string_2}, ${3:string_3}, ${4:string_4}, ${5:string_5}, ${6:int_6})"
+  },
+  {
+    "trigger": "ShowMessage",
+    "contents": "ShowMessage(${1:string_1})"
+  },
+  {
+    "trigger": "SpawnDOTAShopTriggerRadiusApproximate",
+    "contents": "SpawnDOTAShopTriggerRadiusApproximate(${1:VectorvOrigin}, ${2:floatflRadius})"
+  },
+  {
+    "trigger": "SpawnEntityFromTableSynchronous",
+    "contents": "SpawnEntityFromTableSynchronous(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "SpawnEntityGroupFromTable",
+    "contents": "SpawnEntityGroupFromTable(${1:handle_1}, ${2:bool_2}, ${3:handle_3})"
+  },
+  {
+    "trigger": "SpawnEntityListFromTableAsynchronous",
+    "contents": "SpawnEntityListFromTableAsynchronous(${1:handle_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "SpawnEntityListFromTableSynchronous",
+    "contents": "SpawnEntityListFromTableSynchronous(${1:handle_1})"
+  },
+  {
+    "trigger": "SplineQuaternions",
+    "contents": "SplineQuaternions(${1:quaternion}, ${2:quaternion}, ${3:float})"
+  },
+  {
+    "trigger": "SplineVectors",
+    "contents": "SplineVectors(${1:vector}, ${2:vector}, ${3:float})"
+  },
+  {
+    "trigger": "StartSoundEvent",
+    "contents": "StartSoundEvent(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "StartSoundEventFromPosition",
+    "contents": "StartSoundEventFromPosition(${1:string_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "StartSoundEventFromPositionReliable",
+    "contents": "StartSoundEventFromPositionReliable(${1:string_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "StartSoundEventFromPositionUnreliable",
+    "contents": "StartSoundEventFromPositionUnreliable(${1:string_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "StartSoundEventReliable",
+    "contents": "StartSoundEventReliable(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "StartSoundEventUnreliable",
+    "contents": "StartSoundEventUnreliable(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "StopEffect",
+    "contents": "StopEffect(${1:handle_1}, ${2:string_2})"
+  },
+  {
+    "trigger": "StopGlobalSound",
+    "contents": "StopGlobalSound(${1:string_1})"
+  },
+  {
+    "trigger": "StopListeningToAllGameEvents",
+    "contents": "StopListeningToAllGameEvents(${1:handle_1})"
+  },
+  {
+    "trigger": "StopListeningToGameEvent",
+    "contents": "StopListeningToGameEvent(${1:int_1})"
+  },
+  {
+    "trigger": "StopSoundEvent",
+    "contents": "StopSoundEvent(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "StopSoundOn",
+    "contents": "StopSoundOn(${1:string_1}, ${2:handle_2})"
+  },
+  {
+    "trigger": "Time",
+    "contents": "Time()"
+  },
+  {
+    "trigger": "TraceCollideable",
+    "contents": "TraceCollideable(${1:optionalmins})"
+  },
+  {
+    "trigger": "TraceHull",
+    "contents": "TraceHull(${1:handle_1})"
+  },
+  {
+    "trigger": "TraceLine",
+    "contents": "TraceLine(${1:handle_1})"
+  },
+  {
+    "trigger": "UTIL_AngleDiff",
+    "contents": "UTIL_AngleDiff(${1:float_1}, ${2:float_2})"
+  },
+  {
+    "trigger": "UTIL_MessageText",
+    "contents": "UTIL_MessageText(${1:int_1}, ${2:string_2}, ${3:int_3}, ${4:int_4}, ${5:int_5}, ${6:int_6})"
+  },
+  {
+    "trigger": "UTIL_MessageTextAll",
+    "contents": "UTIL_MessageTextAll(${1:string_1}, ${2:int_2}, ${3:int_3}, ${4:int_4}, ${5:int_5})"
+  },
+  {
+    "trigger": "UTIL_MessageTextAll_WithContext",
+    "contents": "UTIL_MessageTextAll_WithContext(${1:Validcontextkeys:player_id}, ${2:value}, ${3:team_id}, ${4:int_4}, ${5:int_5}, ${6:handle_6})"
+  },
+  {
+    "trigger": "UTIL_MessageText_WithContext",
+    "contents": "UTIL_MessageText_WithContext(${1:Validcontextkeys:player_id}, ${2:value}, ${3:team_id}, ${4:int_4}, ${5:int_5}, ${6:int_6}, ${7:handle_7})"
+  },
+  {
+    "trigger": "UTIL_Remove",
+    "contents": "UTIL_Remove(${1:handle_1})"
+  },
+  {
+    "trigger": "UTIL_RemoveImmediate",
+    "contents": "UTIL_RemoveImmediate(${1:handle_1})"
+  },
+  {
+    "trigger": "UTIL_ResetMessageText",
+    "contents": "UTIL_ResetMessageText(${1:int_1})"
+  },
+  {
+    "trigger": "UTIL_ResetMessageTextAll",
+    "contents": "UTIL_ResetMessageTextAll()"
+  },
+  {
+    "trigger": "UnitFilter",
+    "contents": "UnitFilter(${1:handle_1}, ${2:int_2}, ${3:int_3}, ${4:int_4}, ${5:int_5})"
+  },
+  {
+    "trigger": "UnloadSpawnGroup",
+    "contents": "UnloadSpawnGroup(${1:string_1})"
+  },
+  {
+    "trigger": "UnloadSpawnGroupByHandle",
+    "contents": "UnloadSpawnGroupByHandle(${1:int_1})"
+  },
+  {
+    "trigger": "UpdateEventPoints",
+    "contents": "UpdateEventPoints(${1:hEventPointData})"
+  },
+  {
+    "trigger": "VectorAngles",
+    "contents": "VectorAngles(${1:Vector_1})"
+  },
+  {
+    "trigger": "VectorToAngles",
+    "contents": "VectorToAngles(${1:withnoroll})"
+  },
+  {
+    "trigger": "Warning",
+    "contents": "Warning(${1:string_1})"
+  },
+  {
+    "trigger": "cvar_getf",
+    "contents": "cvar_getf(${1:string_1})"
+  },
+  {
+    "trigger": "cvar_setf",
+    "contents": "cvar_setf(${1:string_1}, ${2:float_2})"
+  },
+  {
+    "trigger": "rr_AddDecisionRule",
+    "contents": "rr_AddDecisionRule(${1:handle_1})"
+  },
+  {
+    "trigger": "rr_CommitAIResponse",
+    "contents": "rr_CommitAIResponse(${1:entity}, ${2:airesponse})"
+  },
+  {
+    "trigger": "rr_GetResponseTargets",
+    "contents": "rr_GetResponseTargets()"
+  },
+  {
+    "trigger": "rr_QueryBestResponse",
+    "contents": "rr_QueryBestResponse(${1:entity}, ${2:query}, ${3:handle_3})"
+  },
+  {
+    "trigger": "ActiveSequenceDuration",
+    "contents": "ActiveSequenceDuration()"
+  },
+  {
+    "trigger": "CBaseAnimating_ActiveSequenceDuration",
+    "contents": "ActiveSequenceDuration()"
+  },
+  {
+    "trigger": "GetAttachmentAngles",
+    "contents": "GetAttachmentAngles(${1:iAttachment})"
+  },
+  {
+    "trigger": "CBaseAnimating_GetAttachmentAngles",
+    "contents": "GetAttachmentAngles(${1:iAttachment})"
+  },
+  {
+    "trigger": "GetAttachmentForward",
+    "contents": "GetAttachmentForward(${1:iAttachment})"
+  },
+  {
+    "trigger": "CBaseAnimating_GetAttachmentForward",
+    "contents": "GetAttachmentForward(${1:iAttachment})"
+  },
+  {
+    "trigger": "GetAttachmentOrigin",
+    "contents": "GetAttachmentOrigin(${1:iAttachment})"
+  },
+  {
+    "trigger": "CBaseAnimating_GetAttachmentOrigin",
+    "contents": "GetAttachmentOrigin(${1:iAttachment})"
+  },
+  {
+    "trigger": "GetCycle",
+    "contents": "GetCycle()"
+  },
+  {
+    "trigger": "CBaseAnimating_GetCycle",
+    "contents": "GetCycle()"
+  },
+  {
+    "trigger": "GetGraphParameter",
+    "contents": "GetGraphParameter(${1:pszParam})"
+  },
+  {
+    "trigger": "CBaseAnimating_GetGraphParameter",
+    "contents": "GetGraphParameter(${1:pszParam})"
+  },
+  {
+    "trigger": "GetModelScale",
+    "contents": "GetModelScale()"
+  },
+  {
+    "trigger": "CBaseAnimating_GetModelScale",
+    "contents": "GetModelScale()"
+  },
+  {
+    "trigger": "GetSequence",
+    "contents": "GetSequence()"
+  },
+  {
+    "trigger": "CBaseAnimating_GetSequence",
+    "contents": "GetSequence()"
+  },
+  {
+    "trigger": "IsSequenceFinished",
+    "contents": "IsSequenceFinished()"
+  },
+  {
+    "trigger": "CBaseAnimating_IsSequenceFinished",
+    "contents": "IsSequenceFinished()"
+  },
+  {
+    "trigger": "ResetSequence",
+    "contents": "ResetSequence(${1:pSequenceName})"
+  },
+  {
+    "trigger": "CBaseAnimating_ResetSequence",
+    "contents": "ResetSequence(${1:pSequenceName})"
+  },
+  {
+    "trigger": "ScriptLookupAttachment",
+    "contents": "ScriptLookupAttachment(${1:pAttachmentName})"
+  },
+  {
+    "trigger": "CBaseAnimating_ScriptLookupAttachment",
+    "contents": "ScriptLookupAttachment(${1:pAttachmentName})"
+  },
+  {
+    "trigger": "SequenceDuration",
+    "contents": "SequenceDuration(${1:pSequenceName})"
+  },
+  {
+    "trigger": "CBaseAnimating_SequenceDuration",
+    "contents": "SequenceDuration(${1:pSequenceName})"
+  },
+  {
+    "trigger": "SetGraphLookTarget",
+    "contents": "SetGraphLookTarget(${1:vValue})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetGraphLookTarget",
+    "contents": "SetGraphLookTarget(${1:vValue})"
+  },
+  {
+    "trigger": "SetGraphParameter",
+    "contents": "SetGraphParameter(${1:pszParam}, ${2:svArg})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetGraphParameter",
+    "contents": "SetGraphParameter(${1:pszParam}, ${2:svArg})"
+  },
+  {
+    "trigger": "SetGraphParameterBool",
+    "contents": "SetGraphParameterBool(${1:szName}, ${2:bValue})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetGraphParameterBool",
+    "contents": "SetGraphParameterBool(${1:szName}, ${2:bValue})"
+  },
+  {
+    "trigger": "SetGraphParameterEnum",
+    "contents": "SetGraphParameterEnum(${1:szName}, ${2:nValue})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetGraphParameterEnum",
+    "contents": "SetGraphParameterEnum(${1:szName}, ${2:nValue})"
+  },
+  {
+    "trigger": "SetGraphParameterFloat",
+    "contents": "SetGraphParameterFloat(${1:szName}, ${2:flValue})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetGraphParameterFloat",
+    "contents": "SetGraphParameterFloat(${1:szName}, ${2:flValue})"
+  },
+  {
+    "trigger": "SetGraphParameterInt",
+    "contents": "SetGraphParameterInt(${1:szName}, ${2:nValue})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetGraphParameterInt",
+    "contents": "SetGraphParameterInt(${1:szName}, ${2:nValue})"
+  },
+  {
+    "trigger": "SetGraphParameterVector",
+    "contents": "SetGraphParameterVector(${1:szName}, ${2:vValue})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetGraphParameterVector",
+    "contents": "SetGraphParameterVector(${1:szName}, ${2:vValue})"
+  },
+  {
+    "trigger": "SetModelScale",
+    "contents": "SetModelScale(${1:flScale})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetModelScale",
+    "contents": "SetModelScale(${1:flScale})"
+  },
+  {
+    "trigger": "SetPoseParameter",
+    "contents": "SetPoseParameter(${1:szName}, ${2:fValue})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetPoseParameter",
+    "contents": "SetPoseParameter(${1:szName}, ${2:fValue})"
+  },
+  {
+    "trigger": "SetSequence",
+    "contents": "SetSequence(${1:pSequenceName})"
+  },
+  {
+    "trigger": "CBaseAnimating_SetSequence",
+    "contents": "SetSequence(${1:pSequenceName})"
+  },
+  {
+    "trigger": "StopAnimation",
+    "contents": "StopAnimation()"
+  },
+  {
+    "trigger": "CBaseAnimating_StopAnimation",
+    "contents": "StopAnimation()"
+  },
+  {
+    "trigger": "GetEquippedWeapons",
+    "contents": "GetEquippedWeapons()"
+  },
+  {
+    "trigger": "CBaseCombatCharacter_GetEquippedWeapons",
+    "contents": "GetEquippedWeapons()"
+  },
+  {
+    "trigger": "GetFaction",
+    "contents": "GetFaction()"
+  },
+  {
+    "trigger": "CBaseCombatCharacter_GetFaction",
+    "contents": "GetFaction()"
+  },
+  {
+    "trigger": "GetWeaponCount",
+    "contents": "GetWeaponCount()"
+  },
+  {
+    "trigger": "CBaseCombatCharacter_GetWeaponCount",
+    "contents": "GetWeaponCount()"
+  },
+  {
+    "trigger": "ShootPosition",
+    "contents": "ShootPosition(${1:nHand}, ${2:nMuzzle})"
+  },
+  {
+    "trigger": "CBaseCombatCharacter_ShootPosition",
+    "contents": "ShootPosition(${1:nHand}, ${2:nMuzzle})"
+  },
+  {
+    "trigger": "AddEffects",
+    "contents": "AddEffects(${1:nFlags})"
+  },
+  {
+    "trigger": "CBaseEntity_AddEffects",
+    "contents": "AddEffects(${1:nFlags})"
+  },
+  {
+    "trigger": "ApplyAbsVelocityImpulse",
+    "contents": "ApplyAbsVelocityImpulse(${1:vecImpulse})"
+  },
+  {
+    "trigger": "CBaseEntity_ApplyAbsVelocityImpulse",
+    "contents": "ApplyAbsVelocityImpulse(${1:vecImpulse})"
+  },
+  {
+    "trigger": "ApplyLocalAngularVelocityImpulse",
+    "contents": "ApplyLocalAngularVelocityImpulse(${1:angImpulse})"
+  },
+  {
+    "trigger": "CBaseEntity_ApplyLocalAngularVelocityImpulse",
+    "contents": "ApplyLocalAngularVelocityImpulse(${1:angImpulse})"
+  },
+  {
+    "trigger": "Attribute_GetFloatValue",
+    "contents": "Attribute_GetFloatValue(${1:pName}, ${2:flDefault})"
+  },
+  {
+    "trigger": "CBaseEntity_Attribute_GetFloatValue",
+    "contents": "Attribute_GetFloatValue(${1:pName}, ${2:flDefault})"
+  },
+  {
+    "trigger": "Attribute_GetIntValue",
+    "contents": "Attribute_GetIntValue(${1:pName}, ${2:nDefault})"
+  },
+  {
+    "trigger": "CBaseEntity_Attribute_GetIntValue",
+    "contents": "Attribute_GetIntValue(${1:pName}, ${2:nDefault})"
+  },
+  {
+    "trigger": "Attribute_SetFloatValue",
+    "contents": "Attribute_SetFloatValue(${1:pName}, ${2:flValue})"
+  },
+  {
+    "trigger": "CBaseEntity_Attribute_SetFloatValue",
+    "contents": "Attribute_SetFloatValue(${1:pName}, ${2:flValue})"
+  },
+  {
+    "trigger": "Attribute_SetIntValue",
+    "contents": "Attribute_SetIntValue(${1:pName}, ${2:nValue})"
+  },
+  {
+    "trigger": "CBaseEntity_Attribute_SetIntValue",
+    "contents": "Attribute_SetIntValue(${1:pName}, ${2:nValue})"
+  },
+  {
+    "trigger": "DeleteAttribute",
+    "contents": "DeleteAttribute(${1:pName})"
+  },
+  {
+    "trigger": "CBaseEntity_DeleteAttribute",
+    "contents": "DeleteAttribute(${1:pName})"
+  },
+  {
+    "trigger": "EmitSound",
+    "contents": "EmitSound(${1:soundname})"
+  },
+  {
+    "trigger": "CBaseEntity_EmitSound",
+    "contents": "EmitSound(${1:soundname})"
+  },
+  {
+    "trigger": "EmitSoundParams",
+    "contents": "EmitSoundParams(${1:soundname}, ${2:nPitch}, ${3:flVolume}, ${4:flDelay})"
+  },
+  {
+    "trigger": "CBaseEntity_EmitSoundParams",
+    "contents": "EmitSoundParams(${1:soundname}, ${2:nPitch}, ${3:flVolume}, ${4:flDelay})"
+  },
+  {
+    "trigger": "EyeAngles",
+    "contents": "EyeAngles()"
+  },
+  {
+    "trigger": "CBaseEntity_EyeAngles",
+    "contents": "EyeAngles()"
+  },
+  {
+    "trigger": "EyePosition",
+    "contents": "EyePosition()"
+  },
+  {
+    "trigger": "CBaseEntity_EyePosition",
+    "contents": "EyePosition()"
+  },
+  {
+    "trigger": "FirstMoveChild",
+    "contents": "FirstMoveChild()"
+  },
+  {
+    "trigger": "CBaseEntity_FirstMoveChild",
+    "contents": "FirstMoveChild()"
+  },
+  {
+    "trigger": "FollowEntity",
+    "contents": "FollowEntity(${1:hEnt}, ${2:bBoneMerge})"
+  },
+  {
+    "trigger": "CBaseEntity_FollowEntity",
+    "contents": "FollowEntity(${1:hEnt}, ${2:bBoneMerge})"
+  },
+  {
+    "trigger": "GatherCriteria",
+    "contents": "GatherCriteria(${1:hResult})"
+  },
+  {
+    "trigger": "CBaseEntity_GatherCriteria",
+    "contents": "GatherCriteria(${1:hResult})"
+  },
+  {
+    "trigger": "GetAbsOrigin",
+    "contents": "GetAbsOrigin()"
+  },
+  {
+    "trigger": "CBaseEntity_GetAbsOrigin",
+    "contents": "GetAbsOrigin()"
+  },
+  {
+    "trigger": "GetAbsScale",
+    "contents": "GetAbsScale()"
+  },
+  {
+    "trigger": "CBaseEntity_GetAbsScale",
+    "contents": "GetAbsScale()"
+  },
+  {
+    "trigger": "GetAngles",
+    "contents": "GetAngles()"
+  },
+  {
+    "trigger": "CBaseEntity_GetAngles",
+    "contents": "GetAngles()"
+  },
+  {
+    "trigger": "GetAnglesAsVector",
+    "contents": "GetAnglesAsVector()"
+  },
+  {
+    "trigger": "CBaseEntity_GetAnglesAsVector",
+    "contents": "GetAnglesAsVector()"
+  },
+  {
+    "trigger": "GetAngularVelocity",
+    "contents": "GetAngularVelocity()"
+  },
+  {
+    "trigger": "CBaseEntity_GetAngularVelocity",
+    "contents": "GetAngularVelocity()"
+  },
+  {
+    "trigger": "GetBaseVelocity",
+    "contents": "GetBaseVelocity()"
+  },
+  {
+    "trigger": "CBaseEntity_GetBaseVelocity",
+    "contents": "GetBaseVelocity()"
+  },
+  {
+    "trigger": "GetBoundingMaxs",
+    "contents": "GetBoundingMaxs()"
+  },
+  {
+    "trigger": "CBaseEntity_GetBoundingMaxs",
+    "contents": "GetBoundingMaxs()"
+  },
+  {
+    "trigger": "GetBoundingMins",
+    "contents": "GetBoundingMins()"
+  },
+  {
+    "trigger": "CBaseEntity_GetBoundingMins",
+    "contents": "GetBoundingMins()"
+  },
+  {
+    "trigger": "GetBounds",
+    "contents": "GetBounds()"
+  },
+  {
+    "trigger": "CBaseEntity_GetBounds",
+    "contents": "GetBounds()"
+  },
+  {
+    "trigger": "GetCenter",
+    "contents": "GetCenter()"
+  },
+  {
+    "trigger": "CBaseEntity_GetCenter",
+    "contents": "GetCenter()"
+  },
+  {
+    "trigger": "GetChildren",
+    "contents": "GetChildren()"
+  },
+  {
+    "trigger": "CBaseEntity_GetChildren",
+    "contents": "GetChildren()"
+  },
+  {
+    "trigger": "GetContext",
+    "contents": "GetContext(${1:name})"
+  },
+  {
+    "trigger": "CBaseEntity_GetContext",
+    "contents": "GetContext(${1:name})"
+  },
+  {
+    "trigger": "GetForwardVector",
+    "contents": "GetForwardVector()"
+  },
+  {
+    "trigger": "CBaseEntity_GetForwardVector",
+    "contents": "GetForwardVector()"
+  },
+  {
+    "trigger": "GetHealth",
+    "contents": "GetHealth()"
+  },
+  {
+    "trigger": "CBaseEntity_GetHealth",
+    "contents": "GetHealth()"
+  },
+  {
+    "trigger": "GetLocalAngles",
+    "contents": "GetLocalAngles()"
+  },
+  {
+    "trigger": "CBaseEntity_GetLocalAngles",
+    "contents": "GetLocalAngles()"
+  },
+  {
+    "trigger": "GetLocalAngularVelocity",
+    "contents": "GetLocalAngularVelocity()"
+  },
+  {
+    "trigger": "CBaseEntity_GetLocalAngularVelocity",
+    "contents": "GetLocalAngularVelocity()"
+  },
+  {
+    "trigger": "GetLocalOrigin",
+    "contents": "GetLocalOrigin()"
+  },
+  {
+    "trigger": "CBaseEntity_GetLocalOrigin",
+    "contents": "GetLocalOrigin()"
+  },
+  {
+    "trigger": "GetLocalScale",
+    "contents": "GetLocalScale()"
+  },
+  {
+    "trigger": "CBaseEntity_GetLocalScale",
+    "contents": "GetLocalScale()"
+  },
+  {
+    "trigger": "GetLocalVelocity",
+    "contents": "GetLocalVelocity()"
+  },
+  {
+    "trigger": "CBaseEntity_GetLocalVelocity",
+    "contents": "GetLocalVelocity()"
+  },
+  {
+    "trigger": "GetMass",
+    "contents": "GetMass()"
+  },
+  {
+    "trigger": "CBaseEntity_GetMass",
+    "contents": "GetMass()"
+  },
+  {
+    "trigger": "GetMaxHealth",
+    "contents": "GetMaxHealth()"
+  },
+  {
+    "trigger": "CBaseEntity_GetMaxHealth",
+    "contents": "GetMaxHealth()"
+  },
+  {
+    "trigger": "GetModelName",
+    "contents": "GetModelName()"
+  },
+  {
+    "trigger": "CBaseEntity_GetModelName",
+    "contents": "GetModelName()"
+  },
+  {
+    "trigger": "GetMoveParent",
+    "contents": "GetMoveParent()"
+  },
+  {
+    "trigger": "CBaseEntity_GetMoveParent",
+    "contents": "GetMoveParent()"
+  },
+  {
+    "trigger": "GetOrigin",
+    "contents": "GetOrigin()"
+  },
+  {
+    "trigger": "CBaseEntity_GetOrigin",
+    "contents": "GetOrigin()"
+  },
+  {
+    "trigger": "GetOwner",
+    "contents": "GetOwner()"
+  },
+  {
+    "trigger": "CBaseEntity_GetOwner",
+    "contents": "GetOwner()"
+  },
+  {
+    "trigger": "GetOwnerEntity",
+    "contents": "GetOwnerEntity()"
+  },
+  {
+    "trigger": "CBaseEntity_GetOwnerEntity",
+    "contents": "GetOwnerEntity()"
+  },
+  {
+    "trigger": "GetRightVector",
+    "contents": "GetRightVector()"
+  },
+  {
+    "trigger": "CBaseEntity_GetRightVector",
+    "contents": "GetRightVector()"
+  },
+  {
+    "trigger": "GetRootMoveParent",
+    "contents": "GetRootMoveParent()"
+  },
+  {
+    "trigger": "CBaseEntity_GetRootMoveParent",
+    "contents": "GetRootMoveParent()"
+  },
+  {
+    "trigger": "GetSoundDuration",
+    "contents": "GetSoundDuration(${1:soundname}, ${2:actormodel})"
+  },
+  {
+    "trigger": "CBaseEntity_GetSoundDuration",
+    "contents": "GetSoundDuration(${1:soundname}, ${2:actormodel})"
+  },
+  {
+    "trigger": "GetTeam",
+    "contents": "GetTeam()"
+  },
+  {
+    "trigger": "CBaseEntity_GetTeam",
+    "contents": "GetTeam()"
+  },
+  {
+    "trigger": "GetTeamNumber",
+    "contents": "GetTeamNumber()"
+  },
+  {
+    "trigger": "CBaseEntity_GetTeamNumber",
+    "contents": "GetTeamNumber()"
+  },
+  {
+    "trigger": "GetUpVector",
+    "contents": "GetUpVector()"
+  },
+  {
+    "trigger": "CBaseEntity_GetUpVector",
+    "contents": "GetUpVector()"
+  },
+  {
+    "trigger": "GetVelocity",
+    "contents": "GetVelocity()"
+  },
+  {
+    "trigger": "CBaseEntity_GetVelocity",
+    "contents": "GetVelocity()"
+  },
+  {
+    "trigger": "HasAttribute",
+    "contents": "HasAttribute(${1:pName})"
+  },
+  {
+    "trigger": "CBaseEntity_HasAttribute",
+    "contents": "HasAttribute(${1:pName})"
+  },
+  {
+    "trigger": "IsAlive",
+    "contents": "IsAlive()"
+  },
+  {
+    "trigger": "CBaseEntity_IsAlive",
+    "contents": "IsAlive()"
+  },
+  {
+    "trigger": "IsNPC",
+    "contents": "IsNPC()"
+  },
+  {
+    "trigger": "CBaseEntity_IsNPC",
+    "contents": "IsNPC()"
+  },
+  {
+    "trigger": "IsPlayer",
+    "contents": "IsPlayer()"
+  },
+  {
+    "trigger": "CBaseEntity_IsPlayer",
+    "contents": "IsPlayer()"
+  },
+  {
+    "trigger": "Kill",
+    "contents": "Kill()"
+  },
+  {
+    "trigger": "CBaseEntity_Kill",
+    "contents": "Kill()"
+  },
+  {
+    "trigger": "NextMovePeer",
+    "contents": "NextMovePeer()"
+  },
+  {
+    "trigger": "CBaseEntity_NextMovePeer",
+    "contents": "NextMovePeer()"
+  },
+  {
+    "trigger": "OverrideFriction",
+    "contents": "OverrideFriction(${1:duration}, ${2:friction})"
+  },
+  {
+    "trigger": "CBaseEntity_OverrideFriction",
+    "contents": "OverrideFriction(${1:duration}, ${2:friction})"
+  },
+  {
+    "trigger": "PrecacheScriptSound",
+    "contents": "PrecacheScriptSound(${1:soundname})"
+  },
+  {
+    "trigger": "CBaseEntity_PrecacheScriptSound",
+    "contents": "PrecacheScriptSound(${1:soundname})"
+  },
+  {
+    "trigger": "RemoveEffects",
+    "contents": "RemoveEffects(${1:nFlags})"
+  },
+  {
+    "trigger": "CBaseEntity_RemoveEffects",
+    "contents": "RemoveEffects(${1:nFlags})"
+  },
+  {
+    "trigger": "SetAbsAngles",
+    "contents": "SetAbsAngles(${1:fPitch}, ${2:fYaw}, ${3:fRoll})"
+  },
+  {
+    "trigger": "CBaseEntity_SetAbsAngles",
+    "contents": "SetAbsAngles(${1:fPitch}, ${2:fYaw}, ${3:fRoll})"
+  },
+  {
+    "trigger": "SetAbsOrigin",
+    "contents": "SetAbsOrigin(${1:origin})"
+  },
+  {
+    "trigger": "CBaseEntity_SetAbsOrigin",
+    "contents": "SetAbsOrigin(${1:origin})"
+  },
+  {
+    "trigger": "SetAbsScale",
+    "contents": "SetAbsScale(${1:flScale})"
+  },
+  {
+    "trigger": "CBaseEntity_SetAbsScale",
+    "contents": "SetAbsScale(${1:flScale})"
+  },
+  {
+    "trigger": "SetAngles",
+    "contents": "SetAngles(${1:fPitch}, ${2:fYaw}, ${3:fRoll})"
+  },
+  {
+    "trigger": "CBaseEntity_SetAngles",
+    "contents": "SetAngles(${1:fPitch}, ${2:fYaw}, ${3:fRoll})"
+  },
+  {
+    "trigger": "SetAngularVelocity",
+    "contents": "SetAngularVelocity(${1:pitchVel}, ${2:yawVel}, ${3:rollVel})"
+  },
+  {
+    "trigger": "CBaseEntity_SetAngularVelocity",
+    "contents": "SetAngularVelocity(${1:pitchVel}, ${2:yawVel}, ${3:rollVel})"
+  },
+  {
+    "trigger": "SetConstraint",
+    "contents": "SetConstraint(${1:vPos})"
+  },
+  {
+    "trigger": "CBaseEntity_SetConstraint",
+    "contents": "SetConstraint(${1:vPos})"
+  },
+  {
+    "trigger": "SetContext",
+    "contents": "SetContext(${1:pName}, ${2:pValue}, ${3:duration})"
+  },
+  {
+    "trigger": "CBaseEntity_SetContext",
+    "contents": "SetContext(${1:pName}, ${2:pValue}, ${3:duration})"
+  },
+  {
+    "trigger": "SetContextNum",
+    "contents": "SetContextNum(${1:pName}, ${2:fValue}, ${3:duration})"
+  },
+  {
+    "trigger": "CBaseEntity_SetContextNum",
+    "contents": "SetContextNum(${1:pName}, ${2:fValue}, ${3:duration})"
+  },
+  {
+    "trigger": "SetContextThink",
+    "contents": "SetContextThink(${1:pszContextName}, ${2:hThinkFunc}, ${3:flInterval})"
+  },
+  {
+    "trigger": "CBaseEntity_SetContextThink",
+    "contents": "SetContextThink(${1:pszContextName}, ${2:hThinkFunc}, ${3:flInterval})"
+  },
+  {
+    "trigger": "SetEntityName",
+    "contents": "SetEntityName(${1:pName})"
+  },
+  {
+    "trigger": "CBaseEntity_SetEntityName",
+    "contents": "SetEntityName(${1:pName})"
+  },
+  {
+    "trigger": "SetForwardVector",
+    "contents": "SetForwardVector(${1:v})"
+  },
+  {
+    "trigger": "CBaseEntity_SetForwardVector",
+    "contents": "SetForwardVector(${1:v})"
+  },
+  {
+    "trigger": "SetFriction",
+    "contents": "SetFriction(${1:flFriction})"
+  },
+  {
+    "trigger": "CBaseEntity_SetFriction",
+    "contents": "SetFriction(${1:flFriction})"
+  },
+  {
+    "trigger": "SetGravity",
+    "contents": "SetGravity(${1:flGravity})"
+  },
+  {
+    "trigger": "CBaseEntity_SetGravity",
+    "contents": "SetGravity(${1:flGravity})"
+  },
+  {
+    "trigger": "SetHealth",
+    "contents": "SetHealth(${1:nHealth})"
+  },
+  {
+    "trigger": "CBaseEntity_SetHealth",
+    "contents": "SetHealth(${1:nHealth})"
+  },
+  {
+    "trigger": "SetLocalAngles",
+    "contents": "SetLocalAngles(${1:fPitch}, ${2:fYaw}, ${3:fRoll})"
+  },
+  {
+    "trigger": "CBaseEntity_SetLocalAngles",
+    "contents": "SetLocalAngles(${1:fPitch}, ${2:fYaw}, ${3:fRoll})"
+  },
+  {
+    "trigger": "SetLocalOrigin",
+    "contents": "SetLocalOrigin(${1:origin})"
+  },
+  {
+    "trigger": "CBaseEntity_SetLocalOrigin",
+    "contents": "SetLocalOrigin(${1:origin})"
+  },
+  {
+    "trigger": "SetLocalScale",
+    "contents": "SetLocalScale(${1:flScale})"
+  },
+  {
+    "trigger": "CBaseEntity_SetLocalScale",
+    "contents": "SetLocalScale(${1:flScale})"
+  },
+  {
+    "trigger": "SetMass",
+    "contents": "SetMass(${1:flMass})"
+  },
+  {
+    "trigger": "CBaseEntity_SetMass",
+    "contents": "SetMass(${1:flMass})"
+  },
+  {
+    "trigger": "SetMaxHealth",
+    "contents": "SetMaxHealth(${1:amt})"
+  },
+  {
+    "trigger": "CBaseEntity_SetMaxHealth",
+    "contents": "SetMaxHealth(${1:amt})"
+  },
+  {
+    "trigger": "SetOrigin",
+    "contents": "SetOrigin(${1:v})"
+  },
+  {
+    "trigger": "CBaseEntity_SetOrigin",
+    "contents": "SetOrigin(${1:v})"
+  },
+  {
+    "trigger": "SetOwner",
+    "contents": "SetOwner(${1:pOwner})"
+  },
+  {
+    "trigger": "CBaseEntity_SetOwner",
+    "contents": "SetOwner(${1:pOwner})"
+  },
+  {
+    "trigger": "SetParent",
+    "contents": "SetParent(${1:hParent}, ${2:pAttachmentname})"
+  },
+  {
+    "trigger": "CBaseEntity_SetParent",
+    "contents": "SetParent(${1:hParent}, ${2:pAttachmentname})"
+  },
+  {
+    "trigger": "SetTeam",
+    "contents": "SetTeam(${1:iTeamNum})"
+  },
+  {
+    "trigger": "CBaseEntity_SetTeam",
+    "contents": "SetTeam(${1:iTeamNum})"
+  },
+  {
+    "trigger": "SetVelocity",
+    "contents": "SetVelocity(${1:vecVelocity})"
+  },
+  {
+    "trigger": "CBaseEntity_SetVelocity",
+    "contents": "SetVelocity(${1:vecVelocity})"
+  },
+  {
+    "trigger": "StopSound",
+    "contents": "StopSound(${1:soundname})"
+  },
+  {
+    "trigger": "CBaseEntity_StopSound",
+    "contents": "StopSound(${1:soundname})"
+  },
+  {
+    "trigger": "TakeDamage",
+    "contents": "TakeDamage(${1:hInfo})"
+  },
+  {
+    "trigger": "CBaseEntity_TakeDamage",
+    "contents": "TakeDamage(${1:hInfo})"
+  },
+  {
+    "trigger": "TransformPointEntityToWorld",
+    "contents": "TransformPointEntityToWorld(${1:vPoint})"
+  },
+  {
+    "trigger": "CBaseEntity_TransformPointEntityToWorld",
+    "contents": "TransformPointEntityToWorld(${1:vPoint})"
+  },
+  {
+    "trigger": "TransformPointWorldToEntity",
+    "contents": "TransformPointWorldToEntity(${1:vPoint})"
+  },
+  {
+    "trigger": "CBaseEntity_TransformPointWorldToEntity",
+    "contents": "TransformPointWorldToEntity(${1:vPoint})"
+  },
+  {
+    "trigger": "Trigger",
+    "contents": "Trigger()"
+  },
+  {
+    "trigger": "CBaseEntity_Trigger",
+    "contents": "Trigger()"
+  },
+  {
+    "trigger": "ValidatePrivateScriptScope",
+    "contents": "ValidatePrivateScriptScope()"
+  },
+  {
+    "trigger": "CBaseEntity_ValidatePrivateScriptScope",
+    "contents": "ValidatePrivateScriptScope()"
+  },
+  {
+    "trigger": "GetCurrentScene",
+    "contents": "GetCurrentScene()"
+  },
+  {
+    "trigger": "CBaseFlex_GetCurrentScene",
+    "contents": "GetCurrentScene()"
+  },
+  {
+    "trigger": "GetSceneByIndex",
+    "contents": "GetSceneByIndex(${1:index})"
+  },
+  {
+    "trigger": "CBaseFlex_GetSceneByIndex",
+    "contents": "GetSceneByIndex(${1:index})"
+  },
+  {
+    "trigger": "ScriptPlayScene",
+    "contents": "ScriptPlayScene(${1:pszScene}, ${2:flDelay})"
+  },
+  {
+    "trigger": "CBaseFlex_ScriptPlayScene",
+    "contents": "ScriptPlayScene(${1:pszScene}, ${2:flDelay})"
+  },
+  {
+    "trigger": "GetMaterialGroupHash",
+    "contents": "GetMaterialGroupHash()"
+  },
+  {
+    "trigger": "CBaseModelEntity_GetMaterialGroupHash",
+    "contents": "GetMaterialGroupHash()"
+  },
+  {
+    "trigger": "GetMaterialGroupMask",
+    "contents": "GetMaterialGroupMask()"
+  },
+  {
+    "trigger": "CBaseModelEntity_GetMaterialGroupMask",
+    "contents": "GetMaterialGroupMask()"
+  },
+  {
+    "trigger": "GetRenderAlpha",
+    "contents": "GetRenderAlpha()"
+  },
+  {
+    "trigger": "CBaseModelEntity_GetRenderAlpha",
+    "contents": "GetRenderAlpha()"
+  },
+  {
+    "trigger": "GetRenderColor",
+    "contents": "GetRenderColor()"
+  },
+  {
+    "trigger": "CBaseModelEntity_GetRenderColor",
+    "contents": "GetRenderColor()"
+  },
+  {
+    "trigger": "SetBodygroup",
+    "contents": "SetBodygroup(${1:iGroup}, ${2:iValue})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetBodygroup",
+    "contents": "SetBodygroup(${1:iGroup}, ${2:iValue})"
+  },
+  {
+    "trigger": "SetBodygroupByName",
+    "contents": "SetBodygroupByName(${1:pName}, ${2:iValue})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetBodygroupByName",
+    "contents": "SetBodygroupByName(${1:pName}, ${2:iValue})"
+  },
+  {
+    "trigger": "SetLightGroup",
+    "contents": "SetLightGroup(${1:pLightGroup})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetLightGroup",
+    "contents": "SetLightGroup(${1:pLightGroup})"
+  },
+  {
+    "trigger": "SetMaterialGroup",
+    "contents": "SetMaterialGroup(${1:pMaterialGroup})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetMaterialGroup",
+    "contents": "SetMaterialGroup(${1:pMaterialGroup})"
+  },
+  {
+    "trigger": "SetMaterialGroupHash",
+    "contents": "SetMaterialGroupHash(${1:nHash})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetMaterialGroupHash",
+    "contents": "SetMaterialGroupHash(${1:nHash})"
+  },
+  {
+    "trigger": "SetMaterialGroupMask",
+    "contents": "SetMaterialGroupMask(${1:nMeshGroupMask})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetMaterialGroupMask",
+    "contents": "SetMaterialGroupMask(${1:nMeshGroupMask})"
+  },
+  {
+    "trigger": "SetModel",
+    "contents": "SetModel(${1:pModelName})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetModel",
+    "contents": "SetModel(${1:pModelName})"
+  },
+  {
+    "trigger": "SetRenderAlpha",
+    "contents": "SetRenderAlpha(${1:nAlpha})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetRenderAlpha",
+    "contents": "SetRenderAlpha(${1:nAlpha})"
+  },
+  {
+    "trigger": "SetRenderColor",
+    "contents": "SetRenderColor(${1:r}, ${2:g}, ${3:b})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetRenderColor",
+    "contents": "SetRenderColor(${1:r}, ${2:g}, ${3:b})"
+  },
+  {
+    "trigger": "SetRenderMode",
+    "contents": "SetRenderMode(${1:nMode})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetRenderMode",
+    "contents": "SetRenderMode(${1:nMode})"
+  },
+  {
+    "trigger": "SetSingleMeshGroup",
+    "contents": "SetSingleMeshGroup(${1:pMeshGroupName})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetSingleMeshGroup",
+    "contents": "SetSingleMeshGroup(${1:pMeshGroupName})"
+  },
+  {
+    "trigger": "SetSize",
+    "contents": "SetSize(${1:mins}, ${2:maxs})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetSize",
+    "contents": "SetSize(${1:mins}, ${2:maxs})"
+  },
+  {
+    "trigger": "SetSkin",
+    "contents": "SetSkin(${1:iSkin})"
+  },
+  {
+    "trigger": "CBaseModelEntity_SetSkin",
+    "contents": "SetSkin(${1:iSkin})"
+  },
+  {
+    "trigger": "AreChaperoneBoundsVisible",
+    "contents": "AreChaperoneBoundsVisible()"
+  },
+  {
+    "trigger": "CBasePlayer_AreChaperoneBoundsVisible",
+    "contents": "AreChaperoneBoundsVisible()"
+  },
+  {
+    "trigger": "GetHMDAnchor",
+    "contents": "GetHMDAnchor()"
+  },
+  {
+    "trigger": "CBasePlayer_GetHMDAnchor",
+    "contents": "GetHMDAnchor()"
+  },
+  {
+    "trigger": "GetHMDAvatar",
+    "contents": "GetHMDAvatar()"
+  },
+  {
+    "trigger": "CBasePlayer_GetHMDAvatar",
+    "contents": "GetHMDAvatar()"
+  },
+  {
+    "trigger": "GetPlayArea",
+    "contents": "GetPlayArea(${1:nPoint})"
+  },
+  {
+    "trigger": "CBasePlayer_GetPlayArea",
+    "contents": "GetPlayArea(${1:nPoint})"
+  },
+  {
+    "trigger": "GetUserID",
+    "contents": "GetUserID()"
+  },
+  {
+    "trigger": "CBasePlayer_GetUserID",
+    "contents": "GetUserID()"
+  },
+  {
+    "trigger": "GetVRControllerType",
+    "contents": "GetVRControllerType()"
+  },
+  {
+    "trigger": "CBasePlayer_GetVRControllerType",
+    "contents": "GetVRControllerType()"
+  },
+  {
+    "trigger": "IsNoclipping",
+    "contents": "IsNoclipping()"
+  },
+  {
+    "trigger": "CBasePlayer_IsNoclipping",
+    "contents": "IsNoclipping()"
+  },
+  {
+    "trigger": "IsUsePressed",
+    "contents": "IsUsePressed()"
+  },
+  {
+    "trigger": "CBasePlayer_IsUsePressed",
+    "contents": "IsUsePressed()"
+  },
+  {
+    "trigger": "IsVRControllerButtonPressed",
+    "contents": "IsVRControllerButtonPressed(${1:nButton})"
+  },
+  {
+    "trigger": "CBasePlayer_IsVRControllerButtonPressed",
+    "contents": "IsVRControllerButtonPressed(${1:nButton})"
+  },
+  {
+    "trigger": "IsVRDashboardShowing",
+    "contents": "IsVRDashboardShowing()"
+  },
+  {
+    "trigger": "CBasePlayer_IsVRDashboardShowing",
+    "contents": "IsVRDashboardShowing()"
+  },
+  {
+    "trigger": "Disable",
+    "contents": "Disable()"
+  },
+  {
+    "trigger": "CBaseTrigger_Disable",
+    "contents": "Disable()"
+  },
+  {
+    "trigger": "Enable",
+    "contents": "Enable()"
+  },
+  {
+    "trigger": "CBaseTrigger_Enable",
+    "contents": "Enable()"
+  },
+  {
+    "trigger": "IsTouching",
+    "contents": "IsTouching(${1:hEnt})"
+  },
+  {
+    "trigger": "CBaseTrigger_IsTouching",
+    "contents": "IsTouching(${1:hEnt})"
+  },
+  {
+    "trigger": "AddImpulseAtPosition",
+    "contents": "AddImpulseAtPosition(${1:Vector_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "CBodyComponent_AddImpulseAtPosition",
+    "contents": "AddImpulseAtPosition(${1:Vector_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "AddVelocity",
+    "contents": "AddVelocity(${1:Vector_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "CBodyComponent_AddVelocity",
+    "contents": "AddVelocity(${1:Vector_1}, ${2:Vector_2})"
+  },
+  {
+    "trigger": "DetachFromParent",
+    "contents": "DetachFromParent()"
+  },
+  {
+    "trigger": "CBodyComponent_DetachFromParent",
+    "contents": "DetachFromParent()"
+  },
+  {
+    "trigger": "GetSequence",
+    "contents": "GetSequence()"
+  },
+  {
+    "trigger": "CBodyComponent_GetSequence",
+    "contents": "GetSequence()"
+  },
+  {
+    "trigger": "IsAttachedToParent",
+    "contents": "IsAttachedToParent()"
+  },
+  {
+    "trigger": "CBodyComponent_IsAttachedToParent",
+    "contents": "IsAttachedToParent()"
+  },
+  {
+    "trigger": "LookupSequence",
+    "contents": "LookupSequence(${1:string_1})"
+  },
+  {
+    "trigger": "CBodyComponent_LookupSequence",
+    "contents": "LookupSequence(${1:string_1})"
+  },
+  {
+    "trigger": "SequenceDuration",
+    "contents": "SequenceDuration(${1:string_1})"
+  },
+  {
+    "trigger": "CBodyComponent_SequenceDuration",
+    "contents": "SequenceDuration(${1:string_1})"
+  },
+  {
+    "trigger": "SetAngularVelocity",
+    "contents": "SetAngularVelocity(${1:Vector_1})"
+  },
+  {
+    "trigger": "CBodyComponent_SetAngularVelocity",
+    "contents": "SetAngularVelocity(${1:Vector_1})"
+  },
+  {
+    "trigger": "SetAnimation",
+    "contents": "SetAnimation(${1:string_1})"
+  },
+  {
+    "trigger": "CBodyComponent_SetAnimation",
+    "contents": "SetAnimation(${1:string_1})"
+  },
+  {
+    "trigger": "SetMaterialGroup",
+    "contents": "SetMaterialGroup(${1:utlstringtoken_1})"
+  },
+  {
+    "trigger": "CBodyComponent_SetMaterialGroup",
+    "contents": "SetMaterialGroup(${1:utlstringtoken_1})"
+  },
+  {
+    "trigger": "SetVelocity",
+    "contents": "SetVelocity(${1:Vector_1})"
+  },
+  {
+    "trigger": "CBodyComponent_SetVelocity",
+    "contents": "SetVelocity(${1:Vector_1})"
+  },
+  {
+    "trigger": "RegisterListener",
+    "contents": "RegisterListener(${1:stringEventName}, ${2:funcCallbackFunction})"
+  },
+  {
+    "trigger": "CCustomGameEventManager_RegisterListener",
+    "contents": "RegisterListener(${1:stringEventName}, ${2:funcCallbackFunction})"
+  },
+  {
+    "trigger": "Send_ServerToAllClients",
+    "contents": "Send_ServerToAllClients(${1:stringEventName}, ${2:tableEventData})"
+  },
+  {
+    "trigger": "CCustomGameEventManager_Send_ServerToAllClients",
+    "contents": "Send_ServerToAllClients(${1:stringEventName}, ${2:tableEventData})"
+  },
+  {
+    "trigger": "Send_ServerToPlayer",
+    "contents": "Send_ServerToPlayer(${1:EntityPlayer}, ${2:stringEventName}, ${3:tableEventData})"
+  },
+  {
+    "trigger": "CCustomGameEventManager_Send_ServerToPlayer",
+    "contents": "Send_ServerToPlayer(${1:EntityPlayer}, ${2:stringEventName}, ${3:tableEventData})"
+  },
+  {
+    "trigger": "Send_ServerToTeam",
+    "contents": "Send_ServerToTeam(${1:intTeamNumber}, ${2:stringEventName}, ${3:tableEventData})"
+  },
+  {
+    "trigger": "CCustomGameEventManager_Send_ServerToTeam",
+    "contents": "Send_ServerToTeam(${1:intTeamNumber}, ${2:stringEventName}, ${3:tableEventData})"
+  },
+  {
+    "trigger": "UnregisterListener",
+    "contents": "UnregisterListener(${1:intListnerID})"
+  },
+  {
+    "trigger": "CCustomGameEventManager_UnregisterListener",
+    "contents": "UnregisterListener(${1:intListnerID})"
+  },
+  {
+    "trigger": "GetTableValue",
+    "contents": "GetTableValue(${1:stringTableName}, ${2:stringKeyName})"
+  },
+  {
+    "trigger": "CCustomNetTableManager_GetTableValue",
+    "contents": "GetTableValue(${1:stringTableName}, ${2:stringKeyName})"
+  },
+  {
+    "trigger": "SetTableValue",
+    "contents": "SetTableValue(${1:stringTableName}, ${2:stringKeyName}, ${3:script_tableValue})"
+  },
+  {
+    "trigger": "CCustomNetTableManager_SetTableValue",
+    "contents": "SetTableValue(${1:stringTableName}, ${2:stringKeyName}, ${3:script_tableValue})"
+  },
+  {
+    "trigger": "CanAbilityBeUpgraded",
+    "contents": "CanAbilityBeUpgraded()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_CanAbilityBeUpgraded",
+    "contents": "CanAbilityBeUpgraded()"
+  },
+  {
+    "trigger": "CastAbility",
+    "contents": "CastAbility()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_CastAbility",
+    "contents": "CastAbility()"
+  },
+  {
+    "trigger": "ContinueCasting",
+    "contents": "ContinueCasting()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_ContinueCasting",
+    "contents": "ContinueCasting()"
+  },
+  {
+    "trigger": "CreateVisibilityNode",
+    "contents": "CreateVisibilityNode(${1:vLocation}, ${2:fRadius}, ${3:fDuration})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_CreateVisibilityNode",
+    "contents": "CreateVisibilityNode(${1:vLocation}, ${2:fRadius}, ${3:fDuration})"
+  },
+  {
+    "trigger": "DecrementModifierRefCount",
+    "contents": "DecrementModifierRefCount()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_DecrementModifierRefCount",
+    "contents": "DecrementModifierRefCount()"
+  },
+  {
+    "trigger": "EndChannel",
+    "contents": "EndChannel(${1:bInterrupted})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_EndChannel",
+    "contents": "EndChannel(${1:bInterrupted})"
+  },
+  {
+    "trigger": "EndCooldown",
+    "contents": "EndCooldown()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_EndCooldown",
+    "contents": "EndCooldown()"
+  },
+  {
+    "trigger": "GetAOERadius",
+    "contents": "GetAOERadius()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAOERadius",
+    "contents": "GetAOERadius()"
+  },
+  {
+    "trigger": "GetAbilityDamage",
+    "contents": "GetAbilityDamage()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityDamage",
+    "contents": "GetAbilityDamage()"
+  },
+  {
+    "trigger": "GetAbilityDamageType",
+    "contents": "GetAbilityDamageType()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityDamageType",
+    "contents": "GetAbilityDamageType()"
+  },
+  {
+    "trigger": "GetAbilityIndex",
+    "contents": "GetAbilityIndex()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityIndex",
+    "contents": "GetAbilityIndex()"
+  },
+  {
+    "trigger": "GetAbilityKeyValues",
+    "contents": "GetAbilityKeyValues()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityKeyValues",
+    "contents": "GetAbilityKeyValues()"
+  },
+  {
+    "trigger": "GetAbilityName",
+    "contents": "GetAbilityName()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityName",
+    "contents": "GetAbilityName()"
+  },
+  {
+    "trigger": "GetAbilityTargetFlags",
+    "contents": "GetAbilityTargetFlags()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityTargetFlags",
+    "contents": "GetAbilityTargetFlags()"
+  },
+  {
+    "trigger": "GetAbilityTargetTeam",
+    "contents": "GetAbilityTargetTeam()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityTargetTeam",
+    "contents": "GetAbilityTargetTeam()"
+  },
+  {
+    "trigger": "GetAbilityTargetType",
+    "contents": "GetAbilityTargetType()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityTargetType",
+    "contents": "GetAbilityTargetType()"
+  },
+  {
+    "trigger": "GetAbilityType",
+    "contents": "GetAbilityType()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAbilityType",
+    "contents": "GetAbilityType()"
+  },
+  {
+    "trigger": "GetAnimationIgnoresModelScale",
+    "contents": "GetAnimationIgnoresModelScale()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAnimationIgnoresModelScale",
+    "contents": "GetAnimationIgnoresModelScale()"
+  },
+  {
+    "trigger": "GetAssociatedPrimaryAbilities",
+    "contents": "GetAssociatedPrimaryAbilities()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAssociatedPrimaryAbilities",
+    "contents": "GetAssociatedPrimaryAbilities()"
+  },
+  {
+    "trigger": "GetAssociatedSecondaryAbilities",
+    "contents": "GetAssociatedSecondaryAbilities()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAssociatedSecondaryAbilities",
+    "contents": "GetAssociatedSecondaryAbilities()"
+  },
+  {
+    "trigger": "GetAutoCastState",
+    "contents": "GetAutoCastState()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetAutoCastState",
+    "contents": "GetAutoCastState()"
+  },
+  {
+    "trigger": "GetBackswingTime",
+    "contents": "GetBackswingTime()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetBackswingTime",
+    "contents": "GetBackswingTime()"
+  },
+  {
+    "trigger": "GetBehavior",
+    "contents": "GetBehavior()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetBehavior",
+    "contents": "GetBehavior()"
+  },
+  {
+    "trigger": "GetCastPoint",
+    "contents": "GetCastPoint()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCastPoint",
+    "contents": "GetCastPoint()"
+  },
+  {
+    "trigger": "GetCastRange",
+    "contents": "GetCastRange(${1:vLocation}, ${2:hTarget})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCastRange",
+    "contents": "GetCastRange(${1:vLocation}, ${2:hTarget})"
+  },
+  {
+    "trigger": "GetCaster",
+    "contents": "GetCaster()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCaster",
+    "contents": "GetCaster()"
+  },
+  {
+    "trigger": "GetChannelStartTime",
+    "contents": "GetChannelStartTime()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetChannelStartTime",
+    "contents": "GetChannelStartTime()"
+  },
+  {
+    "trigger": "GetChannelTime",
+    "contents": "GetChannelTime()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetChannelTime",
+    "contents": "GetChannelTime()"
+  },
+  {
+    "trigger": "GetChannelledManaCostPerSecond",
+    "contents": "GetChannelledManaCostPerSecond(${1:iLevel})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetChannelledManaCostPerSecond",
+    "contents": "GetChannelledManaCostPerSecond(${1:iLevel})"
+  },
+  {
+    "trigger": "GetCloneSource",
+    "contents": "GetCloneSource()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCloneSource",
+    "contents": "GetCloneSource()"
+  },
+  {
+    "trigger": "GetConceptRecipientType",
+    "contents": "GetConceptRecipientType()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetConceptRecipientType",
+    "contents": "GetConceptRecipientType()"
+  },
+  {
+    "trigger": "GetCooldown",
+    "contents": "GetCooldown(${1:iLevel})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCooldown",
+    "contents": "GetCooldown(${1:iLevel})"
+  },
+  {
+    "trigger": "GetCooldownTime",
+    "contents": "GetCooldownTime()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCooldownTime",
+    "contents": "GetCooldownTime()"
+  },
+  {
+    "trigger": "GetCooldownTimeRemaining",
+    "contents": "GetCooldownTimeRemaining()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCooldownTimeRemaining",
+    "contents": "GetCooldownTimeRemaining()"
+  },
+  {
+    "trigger": "GetCursorPosition",
+    "contents": "GetCursorPosition()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCursorPosition",
+    "contents": "GetCursorPosition()"
+  },
+  {
+    "trigger": "GetCursorTarget",
+    "contents": "GetCursorTarget()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCursorTarget",
+    "contents": "GetCursorTarget()"
+  },
+  {
+    "trigger": "GetCursorTargetingNothing",
+    "contents": "GetCursorTargetingNothing()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetCursorTargetingNothing",
+    "contents": "GetCursorTargetingNothing()"
+  },
+  {
+    "trigger": "GetDuration",
+    "contents": "GetDuration()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetDuration",
+    "contents": "GetDuration()"
+  },
+  {
+    "trigger": "GetEffectiveCooldown",
+    "contents": "GetEffectiveCooldown(${1:iLevel})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetEffectiveCooldown",
+    "contents": "GetEffectiveCooldown(${1:iLevel})"
+  },
+  {
+    "trigger": "GetGoldCost",
+    "contents": "GetGoldCost(${1:iLevel})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetGoldCost",
+    "contents": "GetGoldCost(${1:iLevel})"
+  },
+  {
+    "trigger": "GetGoldCostForUpgrade",
+    "contents": "GetGoldCostForUpgrade(${1:iLevel})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetGoldCostForUpgrade",
+    "contents": "GetGoldCostForUpgrade(${1:iLevel})"
+  },
+  {
+    "trigger": "GetHeroLevelRequiredToUpgrade",
+    "contents": "GetHeroLevelRequiredToUpgrade()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetHeroLevelRequiredToUpgrade",
+    "contents": "GetHeroLevelRequiredToUpgrade()"
+  },
+  {
+    "trigger": "GetIntrinsicModifierName",
+    "contents": "GetIntrinsicModifierName()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetIntrinsicModifierName",
+    "contents": "GetIntrinsicModifierName()"
+  },
+  {
+    "trigger": "GetLevel",
+    "contents": "GetLevel()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetLevel",
+    "contents": "GetLevel()"
+  },
+  {
+    "trigger": "GetLevelSpecialValueFor",
+    "contents": "GetLevelSpecialValueFor(${1:szName}, ${2:nLevel})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetLevelSpecialValueFor",
+    "contents": "GetLevelSpecialValueFor(${1:szName}, ${2:nLevel})"
+  },
+  {
+    "trigger": "GetManaCost",
+    "contents": "GetManaCost(${1:iLevel})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetManaCost",
+    "contents": "GetManaCost(${1:iLevel})"
+  },
+  {
+    "trigger": "GetMaxLevel",
+    "contents": "GetMaxLevel()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetMaxLevel",
+    "contents": "GetMaxLevel()"
+  },
+  {
+    "trigger": "GetModifierValue",
+    "contents": "GetModifierValue()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetModifierValue",
+    "contents": "GetModifierValue()"
+  },
+  {
+    "trigger": "GetModifierValueBonus",
+    "contents": "GetModifierValueBonus()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetModifierValueBonus",
+    "contents": "GetModifierValueBonus()"
+  },
+  {
+    "trigger": "GetPlaybackRateOverride",
+    "contents": "GetPlaybackRateOverride()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetPlaybackRateOverride",
+    "contents": "GetPlaybackRateOverride()"
+  },
+  {
+    "trigger": "GetSharedCooldownName",
+    "contents": "GetSharedCooldownName()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetSharedCooldownName",
+    "contents": "GetSharedCooldownName()"
+  },
+  {
+    "trigger": "GetSpecialValueFor",
+    "contents": "GetSpecialValueFor(${1:szName})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetSpecialValueFor",
+    "contents": "GetSpecialValueFor(${1:szName})"
+  },
+  {
+    "trigger": "GetStolenActivityModifier",
+    "contents": "GetStolenActivityModifier()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetStolenActivityModifier",
+    "contents": "GetStolenActivityModifier()"
+  },
+  {
+    "trigger": "GetToggleState",
+    "contents": "GetToggleState()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetToggleState",
+    "contents": "GetToggleState()"
+  },
+  {
+    "trigger": "GetUpgradeRecommended",
+    "contents": "GetUpgradeRecommended()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_GetUpgradeRecommended",
+    "contents": "GetUpgradeRecommended()"
+  },
+  {
+    "trigger": "HeroXPChange",
+    "contents": "HeroXPChange(${1:flXP})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_HeroXPChange",
+    "contents": "HeroXPChange(${1:flXP})"
+  },
+  {
+    "trigger": "IncrementModifierRefCount",
+    "contents": "IncrementModifierRefCount()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IncrementModifierRefCount",
+    "contents": "IncrementModifierRefCount()"
+  },
+  {
+    "trigger": "IsActivated",
+    "contents": "IsActivated()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsActivated",
+    "contents": "IsActivated()"
+  },
+  {
+    "trigger": "IsAttributeBonus",
+    "contents": "IsAttributeBonus()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsAttributeBonus",
+    "contents": "IsAttributeBonus()"
+  },
+  {
+    "trigger": "IsChanneling",
+    "contents": "IsChanneling()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsChanneling",
+    "contents": "IsChanneling()"
+  },
+  {
+    "trigger": "IsCooldownReady",
+    "contents": "IsCooldownReady()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsCooldownReady",
+    "contents": "IsCooldownReady()"
+  },
+  {
+    "trigger": "IsCosmetic",
+    "contents": "IsCosmetic(${1:hEntity})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsCosmetic",
+    "contents": "IsCosmetic(${1:hEntity})"
+  },
+  {
+    "trigger": "IsFullyCastable",
+    "contents": "IsFullyCastable()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsFullyCastable",
+    "contents": "IsFullyCastable()"
+  },
+  {
+    "trigger": "IsHidden",
+    "contents": "IsHidden()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsHidden",
+    "contents": "IsHidden()"
+  },
+  {
+    "trigger": "IsHiddenWhenStolen",
+    "contents": "IsHiddenWhenStolen()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsHiddenWhenStolen",
+    "contents": "IsHiddenWhenStolen()"
+  },
+  {
+    "trigger": "IsInAbilityPhase",
+    "contents": "IsInAbilityPhase()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsInAbilityPhase",
+    "contents": "IsInAbilityPhase()"
+  },
+  {
+    "trigger": "IsItem",
+    "contents": "IsItem()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsItem",
+    "contents": "IsItem()"
+  },
+  {
+    "trigger": "IsOwnersGoldEnough",
+    "contents": "IsOwnersGoldEnough(${1:nIssuerPlayerID})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsOwnersGoldEnough",
+    "contents": "IsOwnersGoldEnough(${1:nIssuerPlayerID})"
+  },
+  {
+    "trigger": "IsOwnersGoldEnoughForUpgrade",
+    "contents": "IsOwnersGoldEnoughForUpgrade()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsOwnersGoldEnoughForUpgrade",
+    "contents": "IsOwnersGoldEnoughForUpgrade()"
+  },
+  {
+    "trigger": "IsOwnersManaEnough",
+    "contents": "IsOwnersManaEnough()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsOwnersManaEnough",
+    "contents": "IsOwnersManaEnough()"
+  },
+  {
+    "trigger": "IsPassive",
+    "contents": "IsPassive()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsPassive",
+    "contents": "IsPassive()"
+  },
+  {
+    "trigger": "IsRefreshable",
+    "contents": "IsRefreshable()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsRefreshable",
+    "contents": "IsRefreshable()"
+  },
+  {
+    "trigger": "IsSharedWithTeammates",
+    "contents": "IsSharedWithTeammates()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsSharedWithTeammates",
+    "contents": "IsSharedWithTeammates()"
+  },
+  {
+    "trigger": "IsStealable",
+    "contents": "IsStealable()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsStealable",
+    "contents": "IsStealable()"
+  },
+  {
+    "trigger": "IsStolen",
+    "contents": "IsStolen()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsStolen",
+    "contents": "IsStolen()"
+  },
+  {
+    "trigger": "IsToggle",
+    "contents": "IsToggle()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsToggle",
+    "contents": "IsToggle()"
+  },
+  {
+    "trigger": "IsTrained",
+    "contents": "IsTrained()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_IsTrained",
+    "contents": "IsTrained()"
+  },
+  {
+    "trigger": "MarkAbilityButtonDirty",
+    "contents": "MarkAbilityButtonDirty()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_MarkAbilityButtonDirty",
+    "contents": "MarkAbilityButtonDirty()"
+  },
+  {
+    "trigger": "NumModifiersUsingAbility",
+    "contents": "NumModifiersUsingAbility()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_NumModifiersUsingAbility",
+    "contents": "NumModifiersUsingAbility()"
+  },
+  {
+    "trigger": "OnAbilityPhaseInterrupted",
+    "contents": "OnAbilityPhaseInterrupted()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnAbilityPhaseInterrupted",
+    "contents": "OnAbilityPhaseInterrupted()"
+  },
+  {
+    "trigger": "OnAbilityPhaseStart",
+    "contents": "OnAbilityPhaseStart()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnAbilityPhaseStart",
+    "contents": "OnAbilityPhaseStart()"
+  },
+  {
+    "trigger": "OnAbilityPinged",
+    "contents": "OnAbilityPinged(${1:nPlayerID}, ${2:bCtrlHeld})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnAbilityPinged",
+    "contents": "OnAbilityPinged(${1:nPlayerID}, ${2:bCtrlHeld})"
+  },
+  {
+    "trigger": "OnChannelFinish",
+    "contents": "OnChannelFinish(${1:bInterrupted})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnChannelFinish",
+    "contents": "OnChannelFinish(${1:bInterrupted})"
+  },
+  {
+    "trigger": "OnChannelThink",
+    "contents": "OnChannelThink(${1:flInterval})"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnChannelThink",
+    "contents": "OnChannelThink(${1:flInterval})"
+  },
+  {
+    "trigger": "OnHeroCalculateStatBonus",
+    "contents": "OnHeroCalculateStatBonus()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnHeroCalculateStatBonus",
+    "contents": "OnHeroCalculateStatBonus()"
+  },
+  {
+    "trigger": "OnHeroLevelUp",
+    "contents": "OnHeroLevelUp()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnHeroLevelUp",
+    "contents": "OnHeroLevelUp()"
+  },
+  {
+    "trigger": "OnOwnerDied",
+    "contents": "OnOwnerDied()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnOwnerDied",
+    "contents": "OnOwnerDied()"
+  },
+  {
+    "trigger": "OnOwnerSpawned",
+    "contents": "OnOwnerSpawned()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnOwnerSpawned",
+    "contents": "OnOwnerSpawned()"
+  },
+  {
+    "trigger": "OnSpellStart",
+    "contents": "OnSpellStart()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnSpellStart",
+    "contents": "OnSpellStart()"
+  },
+  {
+    "trigger": "OnToggle",
+    "contents": "OnToggle()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnToggle",
+    "contents": "OnToggle()"
+  },
+  {
+    "trigger": "OnUpgrade",
+    "contents": "OnUpgrade()"
+  },
+  {
+    "trigger": "CDOTABaseAbility_OnUpgrade",
+    "contents": "OnUpgrade()"
+  }
+  ]

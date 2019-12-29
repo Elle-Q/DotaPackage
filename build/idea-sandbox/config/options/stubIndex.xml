@@ -83,6 +83,11 @@
         <option value="Css.ampersand.selector" />
         <option value="dom.elementClass" />
         <option value="dom.namespaceKey" />
+        <option value="lua.index.alias" />
+        <option value="lua.index.super_class" />
+        <option value="lua.index.class" />
+        <option value="lua.index.short_name" />
+        <option value="lua.index.class.member" />
         <option value="java.module.name" />
         <option value="java.class.fqn" />
         <option value="java.class.shortname" />

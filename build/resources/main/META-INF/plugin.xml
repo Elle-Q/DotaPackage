@@ -11,7 +11,9 @@
   <depends>com.intellij.modules.xml</depends>
   <depends>com.intellij.modules.lang</depends>
   <extensions defaultExtensionNs="com.intellij">
-    <completion.contributor language="JavaScript" implementationClass="contributors.JsConstantsContributor"/>
+    <completion.contributor language="JavaScript" implementationClass="contributors.JsCompletionContributor"/>
+    <completion.contributor language="Lua" implementationClass="contributors.LuaCompletionContributor"/>
+    <completion.contributor language="XML" implementationClass="contributors.LuaCompletionContributor"/>
   </extensions>
   <actions/>
 </idea-plugin>

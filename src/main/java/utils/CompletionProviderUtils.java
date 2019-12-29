@@ -4,11 +4,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.intellij.codeInsight.lookup.LookupElement;
 import com.intellij.codeInsight.lookup.LookupElementBuilder;
-import js.script.JSScriptBuilt;
-import model.DotaIcon;
 
 import javax.swing.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -50,6 +50,24 @@ public class CompletionProviderUtils {
                 String Description = object.get("Description").getAsString();
                 LookupElementBuilder element = LookupElementBuilder.create(Signature)
                         .withLookupString(function).withTypeText(Description);
+                if (null != icon) {
+                    element = element.withIcon(icon);
+                }
+                results.add(element);
+            }
+        }
+        return results;
+    }
+
+    public static Collection<LookupElement> createFromPsiItemsForLuaFunc(JsonArray array, Icon icon) {
+        List<LookupElement> results = new ArrayList<>();
+        if (null != array && array.size() > 0) {
+            for (int i = 0; i < array.size(); i++) {
+                JsonObject object = (JsonObject) array.get(i);
+                String function = object.get("trigger").getAsString();
+                String Signature = object.get("contents").getAsString();
+                LookupElementBuilder element = LookupElementBuilder.create(Signature)
+                        .withLookupString(function);
                 if (null != icon) {
                     element = element.withIcon(icon);
                 }

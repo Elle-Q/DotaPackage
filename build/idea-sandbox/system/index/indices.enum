@@ -200,3 +200,9 @@ java.method.parameter.types
 java.class.shortname
 java.class.fqn
 java.module.name
+lua.call.string.param
+lua.index.class.member
+lua.index.short_name
+lua.index.class
+lua.index.super_class
+lua.index.alias
